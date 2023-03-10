@@ -13,20 +13,20 @@ module ALU(
             3'b011: ALUResult<=ALUData1&ALUDtat2; //and, andi
             3'b100: ALUResult<=ALUData1|ALUDtat2; //or, or
             3'b101: ALUResult<=ALUData1^ALUDtat2; //xor xori
-            3'b110: if (ALUDtat2>31) begin
+            3'b110: if (ALUDtat2>31) begin //sll,slli
                         ALUResult<=32'h00000000;
                     end
                     else if (ALUDtat2>0) begin
-                        ALUResult<=ALUData1<<ALUDtat2; //sll,slli
+                        ALUResult<=ALUData1<<ALUDtat2;
                     end
                     else begin
                         ALUResult<=ALUData1;
                     end
-            3'b111: if (ALUDtat2>31) begin
+            3'b111: if (ALUDtat2>31) begin //srl,srli
                         ALUResult<=32'h00000000;
                     end
                     else if (ALUDtat2>0) begin
-                        ALUResult<=ALUData1>>ALUDtat2; //srl,srli
+                        ALUResult<=ALUData1>>ALUDtat2;
                     end
                     else begin
                         ALUResult<=ALUData1;

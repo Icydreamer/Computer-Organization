@@ -13,184 +13,184 @@ module Controller(
     always @(*) begin
         case (OPCode)
             OP_ADD: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b001;
                 ALUDataSelect = 1;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_ADDI: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b001;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_SUB: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b010;
                 ALUDataSelect = 1;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_AND: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b011;
                 ALUDataSelect = 1;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_ANDI: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b011;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_OR: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b100;
                 ALUDataSelect = 1;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_ORI: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b100;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_XOR: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b101;
                 ALUDataSelect = 1;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_XORI: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b101;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_SLL: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b110;
                 ALUDataSelect = 1;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_SLLI: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b110;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_SRL: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b111;
                 ALUDataSelect = 1;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_SRLI: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b111;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 1;
             end
             OP_LUI: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b000;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b01;
+                RegisterWrite = 1;
             end
             OP_LW: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 0;
+                MemRead = 1;
+                ALUOperation = 3'b001;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b10;
+                RegisterWrite = 1;
             end
             OP_SW: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b000;
+                MenWrite = 1;
+                MemRead = 0;
+                ALUOperation = 3'b001;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 0;
             end
             OP_BLT: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b001;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b000;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 0;
             end
             OP_BEQ: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b010;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b010;
                 ALUDataSelect = 1;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b00;
+                RegisterWrite = 0;
             end
             OP_JAL: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b011;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b000;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b11;
+                RegisterWrite = 1;
             end
             OP_JALR: begin
-                AddressSelect = ;
-                MenWrite = ;
-                MemRead = ;
-                ALUOperation = ;
+                AddressSelect = 3'b100;
+                MenWrite = 0;
+                MemRead = 0;
+                ALUOperation = 3'b001;
                 ALUDataSelect = 0;
-                RegisterDataSelect = ;
-                RegisterWrite = ;
+                RegisterDataSelect = 2'b11;
+                RegisterWrite = 1;
             end
         endcase
     end

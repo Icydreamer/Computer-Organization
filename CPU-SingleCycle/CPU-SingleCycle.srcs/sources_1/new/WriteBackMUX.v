@@ -9,8 +9,8 @@ module WriteBackMUX(
 
     always @(*) begin
         if (RegisterWrite==0) RegisterData <= ALUResult;
-        else if (RegisterWrite==1) RegisterData <= Imm32;
-        else if (RegisterWrite==2) RegisterData <= MemData;
-        else RegisterData <= Address;
+        else if (RegisterWrite== 2'b01) RegisterData <= Imm32;
+        else if (RegisterWrite== 2'b10) RegisterData <= MemData;
+        else if(RegisterWrite == 2'b11)RegisterData <= Address;
     end
 endmodule
