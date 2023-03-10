@@ -1,39 +1,39 @@
 module ALU(
-    input [31:0] ReadData1;
-    input [31:0] ReadData2;
+    input [31:0] ALUData1;
+    input [31:0] ALUDtat2;
     input [2:0] ALUOperation;
-    output LessOut;
-    output ZeroOut;
-    output reg[31:0] ResultOut;
+    output ALULess;
+    output ALUZero;
+    output reg[31:0] ALUResult;
 );
     always @(*) begin
         case (ALUOperation)
-            3'b001: ResultOut<=Data1In+Data2In; //add,addi
-            3'b010: ResultOut<=Data1In-Data2In; //sub
-            3'b011: ResultOut<=Data1In&Data2In; //and, andi
-            3'b100: ResultOut<=Data1In|Data2In; //or, or
-            3'b101: ResultOut<=Data1In^Data2In; //xor xori
-            3'b110: if (Data2In>31) begin
-                        ResultOut<=32'h00000000;
+            3'b001: ALUResult<=ALUData1+ALUDtat2; //add,addi
+            3'b010: ALUResult<=ALUData1-ALUDtat2; //sub
+            3'b011: ALUResult<=ALUData1&ALUDtat2; //and, andi
+            3'b100: ALUResult<=ALUData1|ALUDtat2; //or, or
+            3'b101: ALUResult<=ALUData1^ALUDtat2; //xor xori
+            3'b110: if (ALUDtat2>31) begin
+                        ALUResult<=32'h00000000;
                     end
-                    else if (Data2In>0) begin
-                        ResultOut<=Data1In<<Data2In; //sll,slli
-                    end
-                    else begin
-                        ResultOut<=Data1In;
-                    end
-            3'b111: if (Data2In>31) begin
-                        ResultOut<=32'h00000000;
-                    end
-                    else if (Data2In>0) begin
-                        ResultOut<=Data1In>>Data2In; //srl,srli
+                    else if (ALUDtat2>0) begin
+                        ALUResult<=ALUData1<<ALUDtat2; //sll,slli
                     end
                     else begin
-                        ResultOut<=Data1In;
+                        ALUResult<=ALUData1;
                     end
-            default: ResultOut<=32'h00000000; //other cases
+            3'b111: if (ALUDtat2>31) begin
+                        ALUResult<=32'h00000000;
+                    end
+                    else if (ALUDtat2>0) begin
+                        ALUResult<=ALUData1>>ALUDtat2; //srl,srli
+                    end
+                    else begin
+                        ALUResult<=ALUData1;
+                    end
+            default: ALUResult<=32'h00000000; //other cases
         endcase
     end
-    assign LessOut = (ReadData1 < ReadData2)? 1: 0;
-    assign ZeroOut = (ResultOut == 0)? 1: 0;
+    assign ALULess = (ALUData1 < ALUDtat2)? 1: 0;
+    assign ALUZero = (ALUResult == 0)? 1: 0;
 endmodule
