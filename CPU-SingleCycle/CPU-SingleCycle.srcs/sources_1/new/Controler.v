@@ -1,7 +1,7 @@
 `include "Defines.v"
 module Controller(
     input [4:0] OPCode;
-    output [2:0] InstantAddressSelect;
+    output [2:0] AddressSelect;
     output MenWrite;
     output MemRead;
     output [2:0] ALUOperation;
@@ -13,7 +13,7 @@ module Controller(
     always @(*) begin
         case (OPCode)
             OP_ADD: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -22,7 +22,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_ADDI: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -31,7 +31,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_SUB: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -40,7 +40,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_AND: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -49,7 +49,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_ANDI: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -58,7 +58,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_OR: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -67,7 +67,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_ORI: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -76,7 +76,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_XOR: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -85,7 +85,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_XORI: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -94,7 +94,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_SLL: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -103,7 +103,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_SLLI: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -112,7 +112,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_SRL: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -121,7 +121,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_SRLI: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -130,7 +130,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_LUI: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -139,7 +139,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_LW: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -148,7 +148,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_SW: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -157,7 +157,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_BLT: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -166,7 +166,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_BEQ: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -175,7 +175,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_JAL: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
@@ -184,7 +184,7 @@ module Controller(
                 RegisterWrite = ;
             end
             OP_JALR: begin
-                InstantAddressSelect = ;
+                AddressSelect = ;
                 MenWrite = ;
                 MemRead = ;
                 ALUOperation = ;
