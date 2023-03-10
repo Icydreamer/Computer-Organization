@@ -1,0 +1,569 @@
+
+*** Running vivado
+    with args -log SCPU_TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SCPU_TOP.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source SCPU_TOP.tcl -notrace
+Command: synth_design -top SCPU_TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9860 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 472.664 ; gain = 98.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SCPU_TOP' [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:23]
+	Parameter LED_DATA_NUM bound to: 19 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'instr' should be on the sensitivity list [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:93]
+WARNING: [Synth 8-567] referenced signal 'reg_data' should be on the sensitivity list [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:93]
+WARNING: [Synth 8-567] referenced signal 'alu_disp_data' should be on the sensitivity list [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:93]
+WARNING: [Synth 8-567] referenced signal 'dmem_data' should be on the sensitivity list [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:93]
+WARNING: [Synth 8-567] referenced signal 'led_disp_data' should be on the sensitivity list [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:93]
+INFO: [Synth 8-6085] Hierarchical reference on 'rf' stops possible memory inference [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:33]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_im' [E:/homework/computer_organization/lab3/lab3.runs/synth_1/.Xil/Vivado-9568-LAPTOP-UHL51CUR/realtime/dist_mem_im_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_im' (1#1) [E:/homework/computer_organization/lab3/lab3.runs/synth_1/.Xil/Vivado-9568-LAPTOP-UHL51CUR/realtime/dist_mem_im_stub.v:6]
+WARNING: [Synth 8-350] instance 'U_IM' of module 'dist_mem_im' requires 5 connections, but only 2 given [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:215]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:23]
+INFO: [Synth 8-6085] Hierarchical reference on 'rf' stops possible memory inference [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:33]
+WARNING: [Synth 8-5788] Register rf_reg[31] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[30] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[29] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[28] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[27] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[26] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[25] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[24] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[23] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[22] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[21] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[20] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[19] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[18] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[17] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[16] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[15] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[14] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[13] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[12] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[11] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[10] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[9] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[8] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[7] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[6] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[5] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[4] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[3] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[2] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[1] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module RegisterFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (2#1) [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/RegisterFile.v:23]
+WARNING: [Synth 8-350] instance 'U_RF' of module 'RegisterFile' requires 10 connections, but only 9 given [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:220]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16_2' [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/seg7x16.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/seg7x16.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16_2' (3#1) [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/seg7x16.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/ALU.v:25]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/ALU.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (4#1) [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/ALU.v:25]
+WARNING: [Synth 8-689] width (6) of port connection 'ALUOp' does not match port width (5) of module 'ALU' [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:244]
+WARNING: [Synth 8-5788] Register reg_data_reg in module SCPU_TOP is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:145]
+WARNING: [Synth 8-5788] Register alu_disp_data_reg in module SCPU_TOP is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:166]
+WARNING: [Synth 8-3848] Net dmem_data in module/entity SCPU_TOP does not have driver. [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU_TOP' (5#1) [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:23]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 528.055 ; gain = 154.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin U_RF:sw_i[1] to constant 0 [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/SCPU_TOP.v:220]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 528.055 ; gain = 154.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 528.055 ; gain = 154.176
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/homework/computer_organization/lab3/lab3.srcs/sources_1/ip/dist_mem_im/dist_mem_im/dist_mem_gen_0_in_context.xdc] for cell 'U_IM'
+Finished Parsing XDC File [e:/homework/computer_organization/lab3/lab3.srcs/sources_1/ip/dist_mem_im/dist_mem_im/dist_mem_gen_0_in_context.xdc] for cell 'U_IM'
+Parsing XDC File [E:/homework/computer_organization/lab3/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [E:/homework/computer_organization/lab3/icf.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [E:/homework/computer_organization/lab3/icf.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [E:/homework/computer_organization/lab3/icf.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [E:/homework/computer_organization/lab3/icf.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [E:/homework/computer_organization/lab3/icf.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [E:/homework/computer_organization/lab3/icf.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [E:/homework/computer_organization/lab3/icf.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [E:/homework/computer_organization/lab3/icf.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [E:/homework/computer_organization/lab3/icf.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [E:/homework/computer_organization/lab3/icf.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [E:/homework/computer_organization/lab3/icf.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [E:/homework/computer_organization/lab3/icf.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [E:/homework/computer_organization/lab3/icf.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [E:/homework/computer_organization/lab3/icf.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [E:/homework/computer_organization/lab3/icf.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [E:/homework/computer_organization/lab3/icf.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [E:/homework/computer_organization/lab3/icf.xdc:60]
+Finished Parsing XDC File [E:/homework/computer_organization/lab3/icf.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/homework/computer_organization/lab3/icf.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/SCPU_TOP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/homework/computer_organization/lab3/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SCPU_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SCPU_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/homework/computer_organization/lab3/lab3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/homework/computer_organization/lab3/lab3.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.078 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 893.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.105 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 893.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 893.105 ; gain = 519.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 893.105 ; gain = 519.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U_IM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 893.105 ; gain = 519.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/ALU.v:33]
+INFO: [Synth 8-5546] ROM "C" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Zero_reg0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rd" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [E:/homework/computer_organization/lab3/lab3.srcs/sources_1/new/ALU.v:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 893.105 ; gain = 519.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 35    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 106   
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  16 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SCPU_TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 103   
+Module seg7x16_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "C" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Zero_reg0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rd" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[0]
+INFO: [Synth 8-3886] merging instance 'WD_reg[2]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[3]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[4]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[5]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[6]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[7]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[8]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[9]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[10]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[11]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[12]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[13]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[14]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[15]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[16]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[17]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[18]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[19]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[20]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[21]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[22]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[23]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[24]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[25]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[26]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[27]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[28]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[29]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3886] merging instance 'WD_reg[30]' (FDE_1) to 'WD_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_seg7x16/o_seg_r_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 893.105 ; gain = 519.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------------+---------------+----------------+
+|Module Name | RTL Object        | Depth x Width | Implemented As | 
++------------+-------------------+---------------+----------------+
+|SCPU_TOP    | led_disp_data_reg | 32x64         | Block RAM      | 
++------------+-------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_2/led_disp_data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/led_disp_data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/led_disp_data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/led_disp_data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 893.105 ; gain = 519.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 904.578 ; gain = 530.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance led_disp_data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance led_disp_data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance led_disp_data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance led_disp_data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 933.527 ; gain = 559.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin d[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin clk
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U_IM has unconnected pin we
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 933.527 ; gain = 559.648
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 933.527 ; gain = 559.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 933.527 ; gain = 559.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 933.527 ; gain = 559.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 933.527 ; gain = 559.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 933.527 ; gain = 559.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dist_mem_im   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |dist_mem_im |     1|
+|2     |BUFG        |     3|
+|3     |CARRY4      |    19|
+|4     |LUT1        |    15|
+|5     |LUT2        |  2066|
+|6     |LUT3        |  1102|
+|7     |LUT4        |    13|
+|8     |LUT5        |    90|
+|9     |LUT6        |   817|
+|10    |MUXF7       |   132|
+|11    |RAMB18E1    |     1|
+|12    |RAMB18E1_1  |     1|
+|13    |FDCE        |  1152|
+|14    |FDPE        |  1031|
+|15    |FDRE        |    56|
+|16    |FDSE        |    32|
+|17    |LD          |    32|
+|18    |LDC         |  1024|
+|19    |IBUF        |    18|
+|20    |OBUF        |    16|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------+-------------+------+
+|      |Instance    |Module       |Cells |
++------+------------+-------------+------+
+|1     |top         |             |  7652|
+|2     |  U_alu     |ALU          |   119|
+|3     |  U_RF      |RegisterFile |  6592|
+|4     |  u_seg7x16 |seg7x16_2    |   243|
++------+------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 933.527 ; gain = 559.648
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 34 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 933.527 ; gain = 194.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 933.527 ; gain = 559.648
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1209 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'SCPU_TOP' is not ideal for floorplanning, since the cellview 'RegisterFile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 933.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1056 instances were transformed.
+  LD => LDCE: 32 instances
+  LDC => LDCE: 1024 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 94 Warnings, 34 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 933.527 ; gain = 571.156
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 933.527 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/homework/computer_organization/lab3/lab3.runs/synth_1/SCPU_TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SCPU_TOP_utilization_synth.rpt -pb SCPU_TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 31 16:04:30 2022...

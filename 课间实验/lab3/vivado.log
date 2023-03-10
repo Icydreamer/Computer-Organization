@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 31 15:59:54 2022
+# Process ID: 9944
+# Current directory: E:/homework/computer_organization/lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9256 E:\homework\computer_organization\lab3\lab3.xpr
+# Log file: E:/homework/computer_organization/lab3/vivado.log
+# Journal file: E:/homework/computer_organization/lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/homework/computer_organization/lab3/lab3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1043.961 ; gain = 157.453
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/homework/computer_organization/lab3/lab3.srcs/sources_1/ip/dist_mem_im/dist_mem_im.xci' is already up-to-date
+[Sat Dec 31 16:03:57 2022] Launched synth_1...
+Run output will be captured here: E:/homework/computer_organization/lab3/lab3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/homework/computer_organization/lab3/lab3.srcs/sources_1/ip/dist_mem_im/dist_mem_im.xci' is already up-to-date
+[Sat Dec 31 16:05:26 2022] Launched impl_1...
+Run output will be captured here: E:/homework/computer_organization/lab3/lab3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/homework/computer_organization/lab3/lab3.srcs/sources_1/ip/dist_mem_im/dist_mem_im.xci' is already up-to-date
+[Sat Dec 31 16:07:41 2022] Launched impl_1...
+Run output will be captured here: E:/homework/computer_organization/lab3/lab3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61DF4A
+set_property PROGRAM.FILE {E:/homework/computer_organization/lab3/lab3.runs/impl_1/SCPU_TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/homework/computer_organization/lab3/lab3.runs/impl_1/SCPU_TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B61DF4A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 31 17:22:59 2022...

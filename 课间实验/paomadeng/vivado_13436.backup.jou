@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 15 00:03:13 2022
+# Process ID: 13436
+# Current directory: C:/Users/Jhong/paomadeng
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13232 C:\Users\Jhong\paomadeng\paomadeng.xpr
+# Log file: C:/Users/Jhong/paomadeng/vivado.log
+# Journal file: C:/Users/Jhong/paomadeng\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jhong/paomadeng/paomadeng.xpr
+update_compile_order -fileset sources_1

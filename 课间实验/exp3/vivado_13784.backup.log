@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 16 08:48:41 2022
+# Process ID: 13784
+# Current directory: D:/exp/resource/exp2_3/exp2_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13608 D:\exp\resource\exp2_3\exp2_3\exp2_3.xpr
+# Log file: D:/exp/resource/exp2_3/exp2_3/vivado.log
+# Journal file: D:/exp/resource/exp2_3/exp2_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/exp/resource/exp2_3/exp2_3/exp2_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/exp/vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 16 08:51:14 2022] Launched synth_1...
+Run output will be captured here: D:/exp/resource/exp2_3/exp2_3/exp2_3.runs/synth_1/runme.log
+[Wed Nov 16 08:51:14 2022] Launched impl_1...
+Run output will be captured here: D:/exp/resource/exp2_3/exp2_3/exp2_3.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 16 08:52:34 2022...

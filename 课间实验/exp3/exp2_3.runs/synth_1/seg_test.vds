@@ -1,0 +1,463 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 20 14:10:20 2022
+# Process ID: 7788
+# Current directory: D:/exp/resource/exp2_3/exp2_3/exp2_3.runs/synth_1
+# Command line: vivado.exe -log seg_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seg_test.tcl
+# Log file: D:/exp/resource/exp2_3/exp2_3/exp2_3.runs/synth_1/seg_test.vds
+# Journal file: D:/exp/resource/exp2_3/exp2_3/exp2_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source seg_test.tcl -notrace
+Command: synth_design -top seg_test -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4364 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 473.328 ; gain = 99.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'seg_test' [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:4]
+	Parameter LED_DATA_NUM bound to: 19 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'instr' should be on the sensitivity list [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:69]
+WARNING: [Synth 8-567] referenced signal 'reg_data' should be on the sensitivity list [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:69]
+WARNING: [Synth 8-567] referenced signal 'alu_disp_data' should be on the sensitivity list [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:69]
+WARNING: [Synth 8-567] referenced signal 'dmem_data' should be on the sensitivity list [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:69]
+WARNING: [Synth 8-567] referenced signal 'led_disp_data' should be on the sensitivity list [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:69]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/new/RF.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (1#1) [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/new/RF.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_im' [D:/exp/resource/exp2_3/exp2_3/exp2_3.runs/synth_1/.Xil/Vivado-7788-GJNDDN/realtime/dist_mem_im_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_im' (2#1) [D:/exp/resource/exp2_3/exp2_3/exp2_3.runs/synth_1/.Xil/Vivado-7788-GJNDDN/realtime/dist_mem_im_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg7x16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (3#1) [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg7x16.v:3]
+WARNING: [Synth 8-6014] Unused sequential element led_data_addr_reg was removed.  [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:51]
+WARNING: [Synth 8-6014] Unused sequential element led_disp_data_reg was removed.  [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:52]
+WARNING: [Synth 8-3848] Net rf_addr_r1 in module/entity seg_test does not have driver. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:98]
+WARNING: [Synth 8-3848] Net rf_addr_r2 in module/entity seg_test does not have driver. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'seg_test' (4#1) [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:4]
+WARNING: [Synth 8-3331] design RF has unconnected port rstn
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 527.754 ; gain = 154.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r1[4] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r1[3] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r1[2] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r1[1] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r1[0] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r2[4] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r2[3] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r2[2] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r2[1] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+WARNING: [Synth 8-3295] tying undriven pin rf:rf_addr_r2[0] to constant 0 [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:103]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 527.754 ; gain = 154.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 527.754 ; gain = 154.254
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/ip/dist_mem_im/dist_mem_im/dist_mem_im_in_context.xdc] for cell 'U_IM'
+Finished Parsing XDC File [d:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/ip/dist_mem_im/dist_mem_im/dist_mem_im_in_context.xdc] for cell 'U_IM'
+Parsing XDC File [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc:60]
+Finished Parsing XDC File [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/seg_test_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/constrs_1/imports/resource/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/seg_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/seg_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 866.199 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 866.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 866.254 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 866.254 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 866.254 ; gain = 492.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 866.254 ; gain = 492.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U_IM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 866.254 ; gain = 492.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "o_seg_r" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'tmp_reg' [D:/exp/resource/exp2_3/exp2_3/exp2_3.srcs/sources_1/imports/new/seg_test.v:127]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 866.254 ; gain = 492.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  18 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module seg_test 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module RF 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  18 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design seg_test has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design seg_test has unconnected port sw_i[2]
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[62]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[54]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[46]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[38]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[61]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[53]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[45]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[37]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[60]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[52]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[44]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[36]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[57]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[49]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[41]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[33]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[59]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[51]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[43]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[35]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[56]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[48]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[40]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[32]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[58]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[50]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[42]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[34]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[63]' (FDC) to 'u_seg7x16/i_data_store_reg[55]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[55]' (FDC) to 'u_seg7x16/i_data_store_reg[47]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[47]' (FDC) to 'u_seg7x16/i_data_store_reg[39]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_seg7x16/i_data_store_reg[39] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 866.254 ; gain = 492.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|seg_test    | rf/file_reg | Implied   | 16 x 4               | RAM32M x 6   | 
++------------+-------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 866.449 ; gain = 492.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 892.191 ; gain = 518.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|seg_test    | rf/file_reg | Implied   | 16 x 4               | RAM32M x 6   | 
++------------+-------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'rf/ii_reg_rep[0]' (FDR_1) to 'rf/ii_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rf/ii_reg_rep[1]' (FDR_1) to 'rf/ii_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rf/ii_reg_rep[2]' (FDR_1) to 'rf/ii_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rf/ii_reg_rep[3]' (FDR_1) to 'rf/ii_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rf/ii_reg_rep[4]' (FDR_1) to 'rf/ii_reg[4]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 893.379 ; gain = 519.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 893.379 ; gain = 519.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 893.379 ; gain = 519.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 893.379 ; gain = 519.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 893.379 ; gain = 519.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 893.379 ; gain = 519.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 893.379 ; gain = 519.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dist_mem_im   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |dist_mem_im |     1|
+|2     |BUFG        |     3|
+|3     |CARRY4      |    11|
+|4     |LUT1        |     6|
+|5     |LUT2        |     8|
+|6     |LUT3        |    52|
+|7     |LUT4        |     4|
+|8     |LUT5        |     9|
+|9     |LUT6        |    23|
+|10    |RAM32M      |     6|
+|11    |FDCE        |    78|
+|12    |FDPE        |     8|
+|13    |FDRE        |    25|
+|14    |FDSE        |    16|
+|15    |LD          |    32|
+|16    |IBUF        |    16|
+|17    |OBUF        |    16|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------+--------+------+
+|      |Instance    |Module  |Cells |
++------+------------+--------+------+
+|1     |top         |        |   345|
+|2     |  rf        |RF      |    83|
+|3     |  u_seg7x16 |seg7x16 |   116|
++------+------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 893.379 ; gain = 519.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 893.379 ; gain = 181.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 893.379 ; gain = 519.879
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 893.379 ; gain = 531.355
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 893.379 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/exp/resource/exp2_3/exp2_3/exp2_3.runs/synth_1/seg_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file seg_test_utilization_synth.rpt -pb seg_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 20 14:11:09 2022...

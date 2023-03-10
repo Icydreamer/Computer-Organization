@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec  8 11:39:24 2022
+# Process ID: 9420
+# Current directory: E:/homework/computer_organization/lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11836 E:\homework\computer_organization\lab3\lab3.xpr
+# Log file: E:/homework/computer_organization/lab3/vivado.log
+# Journal file: E:/homework/computer_organization/lab3\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project E:/homework/computer_organization/lab3/lab3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 756.781 ; gain = 164.910
+uupdate_compile_order -fileset sources_1exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  8 11:42:37 2022...
+
+d to delete one or more files in run directory E:/homework/computer_organization/lab3/lab3.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/homework/computer_organization/lab3/lab3.srcs/sources_1/ip/dist_mem_im/dist_mem_im.xci' is already up-to-date
+[Thu Dec  8 11:41:04 2022] Launched synth_1...
+Run output will be captured here: E:/homework/computer_organization/lab3/lab3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/homework/computer_organization/lab3/lab3.srcs/sources_1/ip/dist_mem_im/dist_mem_im.xci' is already up-to-date
+[Thu Dec  8 11:42:40 2022] Launched impl_1...
+Run output will be captured here: E:/homework/computer_organization/lab3/lab3.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  8 11:47:35 2022...

@@ -1,0 +1,13 @@
+
+*** Running vivado
+    with args -log dist_mem_im.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dist_mem_im.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dist_mem_im.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dist_mem_im, cache-ID = 66d8b2ccb44ee8b7.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  8 08:51:50 2022...

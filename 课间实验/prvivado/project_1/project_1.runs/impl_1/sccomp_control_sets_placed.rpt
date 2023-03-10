@@ -1,0 +1,91 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  8 09:09:55 2022
+| Host         : LAPTOP-UHL51CUR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file sccomp_control_sets_placed.rpt
+| Design       : sccomp
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |    94 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      2 |            2 |
+|      3 |            2 |
+|      4 |            1 |
+|      6 |            2 |
+|    16+ |           14 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              34 |            9 |
+| No           | No                    | Yes                    |            1109 |          356 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              41 |           24 |
+| Yes          | No                    | Yes                    |              50 |           16 |
+| Yes          | Yes                   | No                     |              32 |           18 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-----------------------------+------------------------------+------------------+----------------+
+|     Clock Signal    |        Enable Signal        |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++---------------------+-----------------------------+------------------------------+------------------+----------------+
+|  Clk_CPU_BUFG       |                             | U_RF/rstn_1                  |                1 |              1 |
+|  Clk_CPU_BUFG       | sw_i_IBUF[13]               | U_RF/rstn                    |                2 |              2 |
+| ~Clk_CPU_BUFG       |                             |                              |                1 |              2 |
+|  u_seg7x16/seg7_clk |                             | u_seg7x16/rstn               |                1 |              3 |
+|  Clk_CPU_BUFG       |                             | u_seg7x16/rstn               |                1 |              3 |
+|  clk_IBUF_BUFG      | U_RF/regfile[15][3]_i_1_n_1 | U_RF/rstn                    |                2 |              4 |
+|  Clk_CPU_BUFG       | sw_i_IBUF[13]               | U_RF/rstn_1                  |                2 |              6 |
+|  Clk_CPU_BUFG       | sw_i_IBUF[0]                | U_RF/rstn_1                  |                2 |              6 |
+|  Clk_CPU_BUFG       | sw_i_IBUF[14]               | U_RF/rstn_1                  |                8 |             32 |
+|  Clk_CPU_BUFG       | alu_disp_data               | alu_disp_data[31]_i_1_n_1    |               18 |             32 |
+|  n_0_583_BUFG       |                             |                              |                8 |             32 |
+|  Clk_CPU_BUFG       | rs1                         |                              |               24 |             41 |
+|  clk_IBUF_BUFG      |                             | u_seg7x16/rstn               |               18 |             55 |
+|  clk_IBUF_BUFG      |                             | U_RF/rstn_1                  |               20 |             77 |
+|  clk_IBUF_BUFG      |                             | U_RF/rstn                    |               39 |            116 |
+|  clk_IBUF_BUFG      |                             | U_RF/regfile[11][31]_i_2_n_1 |               54 |            122 |
+|  clk_IBUF_BUFG      |                             | U_RF/regfile[13][15]_i_2_n_1 |               45 |            122 |
+|  clk_IBUF_BUFG      |                             | U_RF/regfile[19][31]_i_1_n_1 |               36 |            122 |
+|  clk_IBUF_BUFG      |                             | U_RF/regfile[29][15]_i_1_n_1 |               30 |            122 |
+|  clk_IBUF_BUFG      |                             | U_RF/regfile[21][15]_i_1_n_1 |               35 |            122 |
+|  clk_IBUF_BUFG      |                             | U_RF/regfile[27][31]_i_1_n_1 |               34 |            122 |
+|  clk_IBUF_BUFG      |                             | U_RF/rstn_0                  |               42 |            122 |
++---------------------+-----------------------------+------------------------------+------------------+----------------+
+
+

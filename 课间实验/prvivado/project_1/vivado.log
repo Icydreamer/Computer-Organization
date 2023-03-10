@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec  8 08:50:37 2022
+# Process ID: 1472
+# Current directory: E:/homework/computer_organization/prvivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1820 E:\homework\computer_organization\prvivado\project_1\project_1.xpr
+# Log file: E:/homework/computer_organization/prvivado/project_1/vivado.log
+# Journal file: E:/homework/computer_organization/prvivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/homework/computer_organization/prvivado/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Jhong/Desktop/vivado/prvivado/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado2018/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run dist_mem_im_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_im'...
+[Thu Dec  8 08:51:42 2022] Launched dist_mem_im_synth_1...
+Run output will be captured here: E:/homework/computer_organization/prvivado/project_1/project_1.runs/dist_mem_im_synth_1/runme.log
+[Thu Dec  8 08:51:42 2022] Launched synth_1...
+Run output will be captured here: E:/homework/computer_organization/prvivado/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Dec  8 08:52:34 2022] Launched impl_1...
+Run output will be captured here: E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec  8 08:54:13 2022] Launched impl_1...
+Run output will be captured here: E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61DF4A
+set_property PROGRAM.FILE {E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/sccomp.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/sccomp.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Dec  8 09:08:46 2022] Launched synth_1...
+Run output will be captured here: E:/homework/computer_organization/prvivado/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Dec  8 09:09:24 2022] Launched impl_1...
+Run output will be captured here: E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec  8 09:10:33 2022] Launched impl_1...
+Run output will be captured here: E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61DF4A
+set_property PROGRAM.FILE {E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/sccomp.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/sccomp.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/homework/computer_organization/prvivado/project_1/project_1.runs/impl_1/sccomp.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B61DF4A
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  8 11:47:42 2022...
