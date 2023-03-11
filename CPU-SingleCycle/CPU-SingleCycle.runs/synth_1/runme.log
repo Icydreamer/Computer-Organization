@@ -1,0 +1,765 @@
+
+*** Running vivado
+    with args -log Computer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Computer.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Computer.tcl -notrace
+Command: synth_design -top Computer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23400 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 437.211 ; gain = 97.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Computer' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IMem' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/IMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMem' (2#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/IMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (3#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:4]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (4#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ImmGen.v:4]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm12' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm6' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm20' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm7' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm5' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ImmGen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (5#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ImmGen.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ALUDataMUX' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ALUDataMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALUDataMUX' (6#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ALUDataMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCPlusOffset' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/PCPlusOffset.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCPlusOffset' (8#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/PCPlusOffset.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCPlusOne' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/PCPlusOneAddress.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCPlusOne' (9#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/PCPlusOneAddress.v:3]
+INFO: [Synth 8-6157] synthesizing module 'AddressMUX' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/AddressMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AddressMUX' (10#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/AddressMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (11#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/WriteBackMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBackMUX' (12#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/WriteBackMUX.v:3]
+WARNING: [Synth 8-689] width (2) of port connection 'RegisterDataSelect' does not match port width (1) of module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'Computer' (13#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[31]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[30]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[29]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[28]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[27]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[26]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[25]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[24]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[23]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[22]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[21]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[20]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[19]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[18]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[17]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[16]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[15]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[14]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[13]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[12]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[11]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[10]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[9]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[8]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[7]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[6]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[5]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[4]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[2]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[1]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[0]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[31]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[30]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[29]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[28]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[27]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[26]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[25]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[24]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[23]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[22]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[21]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[20]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[19]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[18]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[17]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[16]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[15]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[14]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[13]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[12]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[11]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[10]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[9]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[8]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[7]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[6]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[5]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[4]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[2]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[1]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[0]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[6]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[5]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[31]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[30]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[29]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[28]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[27]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[26]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[25]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[24]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[23]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[22]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[21]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[20]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[19]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[18]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[17]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[16]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[15]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[14]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[13]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[12]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[11]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[10]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[9]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[8]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[7]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[6]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[5]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 493.664 ; gain = 154.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 493.664 ; gain = 154.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 493.664 ; gain = 154.324
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5546] ROM "Registers_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/ALU.v:12]
+INFO: [Synth 8-5545] ROM "ALUZero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'AddressSelect_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOperation_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUDataSelect_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'RegisterDataSelect_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'RegisterWrite_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'RegisterData_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/WriteBackMUX.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 655.375 ; gain = 316.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 65    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 80    
+	  14 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	  21 Input      3 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 129   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	  21 Input      3 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 4     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module ImmGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+Module ALUDataMUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module PCPlusOffset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module PCPlusOne 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module AddressMUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 70    
+	   2 Input      1 Bit        Muxes := 96    
+Module WriteBackMUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Memory_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myALU/ALUZero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][4]' (FDRE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][4] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][5]' (FDRE) to 'myRegisterFile/Registers_reg[7][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][5] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][6]' (FDRE) to 'myRegisterFile/Registers_reg[7][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][6] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][7]' (FDRE) to 'myRegisterFile/Registers_reg[7][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][7] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][8]' (FDRE) to 'myRegisterFile/Registers_reg[7][8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][8] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][9]' (FDRE) to 'myRegisterFile/Registers_reg[7][9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][9] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][10]' (FDRE) to 'myRegisterFile/Registers_reg[7][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][10] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][11]' (FDRE) to 'myRegisterFile/Registers_reg[7][11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][11] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][12]' (FDRE) to 'myRegisterFile/Registers_reg[7][12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][12] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][13]' (FDRE) to 'myRegisterFile/Registers_reg[7][13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][13] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][14]' (FDRE) to 'myRegisterFile/Registers_reg[7][14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][14] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][15]' (FDRE) to 'myRegisterFile/Registers_reg[7][15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[7][3] )
+WARNING: [Synth 8-3332] Sequential element (myController/MemWrite_reg) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/MemRead_reg) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/RegisterDataSelect_reg[1]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[31]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[30]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[29]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[28]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[27]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[26]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[25]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[24]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[23]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[22]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[21]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[20]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[19]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[18]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[17]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[16]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[15]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[14]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[13]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[12]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[11]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[10]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[9]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[8]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[7]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[6]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[5]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[4]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[3]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[2]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[1]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myWriteBackMUX/RegisterData_reg[0]) is unused and will be removed from module Computer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------------------+---------------+----------------+
+|Module Name | RTL Object                 | Depth x Width | Implemented As | 
++------------+----------------------------+---------------+----------------+
+|Controller  | ALUOperation               | 32x3          | LUT            | 
+|Controller  | ALUDataSelect              | 32x1          | LUT            | 
+|Computer    | myController/ALUOperation  | 32x3          | LUT            | 
+|Computer    | myController/ALUDataSelect | 32x1          | LUT            | 
++------------+----------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myController/AddressSelect_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (myController/AddressSelect_reg[2]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/AddressSelect_reg[1]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/AddressSelect_reg[0]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/ALUOperation_reg[2]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/ALUOperation_reg[1]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/ALUOperation_reg[0]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/ALUDataSelect_reg) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/RegisterDataSelect_reg[0]) is unused and will be removed from module Computer.
+WARNING: [Synth 8-3332] Sequential element (myController/RegisterWrite_reg) is unused and will be removed from module Computer.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    14|
+|3     |LUT1   |     1|
+|4     |LUT2   |    59|
+|5     |LUT3   |    79|
+|6     |LUT4   |    83|
+|7     |LUT5   |   108|
+|8     |LUT6   |   274|
+|9     |MUXF7  |    32|
+|10    |FDRE   |   148|
+|11    |IBUF   |     2|
+|12    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------+------+
+|      |Instance         |Module       |Cells |
++------+-----------------+-------------+------+
+|1     |top              |             |   817|
+|2     |  myALU          |ALU          |    12|
+|3     |  myPC           |PC           |   440|
+|4     |  myPCPlusOffset |PCPlusOffset |     1|
+|5     |  myRegisterFile |RegisterFile |   344|
++------+-----------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 153 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 811.523 ; gain = 472.184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 811.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+301 Infos, 153 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 811.523 ; gain = 485.488
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 811.523 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.runs/synth_1/Computer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Computer_utilization_synth.rpt -pb Computer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 11 14:28:31 2023...
