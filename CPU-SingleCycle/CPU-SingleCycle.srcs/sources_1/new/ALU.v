@@ -1,10 +1,10 @@
 module ALU(
-    input [31:0] ALUData1;
-    input [31:0] ALUDtat2;
-    input [2:0] ALUOperation;
-    output ALULess;
-    output ALUZero;
-    output reg[31:0] ALUResult;
+    input [31:0] ALUData1,
+    input [31:0] ALUDtat2,
+    input [2:0] ALUOperation,
+    output ALULess,
+    output ALUZero,
+    output reg[31:0] ALUResult
 );
     always @(*) begin
         case (ALUOperation)

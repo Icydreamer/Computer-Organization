@@ -1,11 +1,11 @@
 module DataMemory(
-    input clkIn;
-    input resetIn;
-    input [31:0] AddressIn;//from alu
-    input [31:0] WriteData;// from register
-    input MemRead;//control
-    input MenWrite;
-    output [31:0] ReadData;
+    input clkIn,
+    input resetIn,
+    input [31:0] AddressIn,//from alu
+    input [31:0] WriteData,// from register
+    input MemRead,//control
+    input MenWrite,
+    output [31:0] ReadData
 );
     reg [31:0] Memory[31:0];
     integer i;

@@ -1,11 +1,11 @@
 module AddressMUX(
-    input ALULess;
-    input ALUZero;
-    input [31:0] ALUResult;
-    input [31:0] PCPlusOffset;
-    input [31:0] PCPlusOne;
-    input [2:0] AddressSelect;
-    output reg [31:0] Address;
+    input ALULess,
+    input ALUZero,
+    input [31:0] ALUResult,
+    input [31:0] PCPlusOffset,
+    input [31:0] PCPlusOne,
+    input [2:0] AddressSelect,
+    output reg [31:0] Address
 );
 
     always @(*) begin

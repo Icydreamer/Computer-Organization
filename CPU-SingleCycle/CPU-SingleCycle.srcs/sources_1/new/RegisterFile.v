@@ -1,14 +1,14 @@
 module RegisterFiel(
-    input clkIn;
-    input resetIn;
-    input [4:0] Register1;
-    input [4:0] Register2;
-    input [4:0] RegisterDestination;
-    input [31:0] WriteData;
-    input RegisterWrite;
-    output [31:0] ReadData1;
-    output [31:0] ReadData2;
-    output portOut;
+    input clkIn,
+    input resetIn,
+    input [4:0] Register1,
+    input [4:0] Register2,
+    input [4:0] RegisterDestination,
+    input [31:0] WriteData,
+    input RegisterWrite,
+    output [31:0] ReadData1,
+    output [31:0] ReadData2,
+    output portOut
 );
     reg [31:0] Registers [31:0];
     integer i;

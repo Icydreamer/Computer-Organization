@@ -1,7 +1,7 @@
 `include "Defines.v"
 module ImmGen(
-    input [31:0] instruction;
-    output reg [31:0] Imm32;
+    input [31:0] instruction,
+    output reg [31:0] Imm32
 );
 
     wire [4:0] opcode;

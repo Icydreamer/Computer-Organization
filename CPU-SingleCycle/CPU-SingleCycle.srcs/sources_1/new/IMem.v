@@ -1,6 +1,6 @@
 module IMem(
-    input [31:0] AddrIn;
-    output [31:0] InsOut;
+    input [31:0] AddrIn,
+    output [31:0] InsOut
 );
     wire[31:0] ROM[9:0];         // store test program
     assign ROM[0]=32'h0000008e; // the first instruction

@@ -1,13 +1,13 @@
 `include "Defines.v"
 module Controller(
-    input [4:0] OPCode;
-    output [2:0] AddressSelect;
-    output MenWrite;
-    output MemRead;
-    output [2:0] ALUOperation;
-    output ALUDataSelect;
-    output [1:0] RegisterDataSelect;
-    output RegisterWrite;
+    input [4:0] OPCode,
+    output [2:0] AddressSelect,
+    output MenWrite,
+    output MemRead,
+    output [2:0] ALUOperation,
+    output ALUDataSelect,
+    output [1:0] RegisterDataSelect,
+    output RegisterWrite
 );
 // 未完成
     always @(*) begin
