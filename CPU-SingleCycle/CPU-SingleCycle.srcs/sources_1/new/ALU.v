@@ -5,7 +5,7 @@ module ALU(
     output ALULess,
     output ALUZero,
     output reg[31:0] ALUResult
-);
+    );
     always @(*) begin
         case (ALUOperation)
             3'b001: ALUResult<=ALUData1+ALUDtat2; //add,addi

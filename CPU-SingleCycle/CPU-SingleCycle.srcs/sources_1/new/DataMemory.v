@@ -6,7 +6,7 @@ module DataMemory(
     input MemRead,//control
     input MenWrite,
     output [31:0] ReadData
-);
+    );
     reg [31:0] Memory[31:0];
     integer i;
     assign ReadData = MemRead? Memory[AddressIn]: 0;

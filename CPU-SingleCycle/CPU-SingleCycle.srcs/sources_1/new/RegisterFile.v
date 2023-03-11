@@ -1,4 +1,4 @@
-module RegisterFiel(
+module RegisterFile(
     input clkIn,
     input resetIn,
     input [4:0] Register1,
@@ -9,7 +9,7 @@ module RegisterFiel(
     output [31:0] ReadData1,
     output [31:0] ReadData2,
     output portOut
-);
+    );
     reg [31:0] Registers [31:0];
     integer i;
     always @(posedge clkIn) begin

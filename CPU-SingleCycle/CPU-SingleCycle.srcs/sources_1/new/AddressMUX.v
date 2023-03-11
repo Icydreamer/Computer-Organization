@@ -5,37 +5,37 @@ module AddressMUX(
     input [31:0] PCPlusOffset,
     input [31:0] PCPlusOne,
     input [2:0] AddressSelect,
-    output reg [31:0] Address
-);
+    output reg [31:0] AddressOut
+    );
 
     always @(*) begin
         if(AddressSelect == 0) begin
-            Address <= PCPlusOne;
+            AddressOut <= PCPlusOne;
         end
         else if(AddressSelect == 1) begin //blt
             if(ALULess == 1) begin
-                Address <= PCPlusOffset;
+                AddressOut <= PCPlusOffset;
             end
             else begin
-                Address <= PCPlusOne;
+                AddressOut <= PCPlusOne;
             end
         end
         else if(AddressSelect == 2) begin //beq
             if(ALUZero == 1) begin 
-                Address <= PCPlusOffset;
+                AddressOut <= PCPlusOffset;
             end
             else begin
-                Address <= PCPlusOne;
+                AddressOut <= PCPlusOne;
             end
         end
         else if(AddressSelect == 3) begin //jal
-            Address <= PCPlusOffset;
+            AddressOut <= PCPlusOffset;
         end
         else if(AddressSelect == 4) begin //jalr
-            Address <= ALUResult;
+            AddressOut <= ALUResult;
         end
         else begin //reset
-            Address <= 0;
+            AddressOut <= 0;
         end
     end
 endmodule

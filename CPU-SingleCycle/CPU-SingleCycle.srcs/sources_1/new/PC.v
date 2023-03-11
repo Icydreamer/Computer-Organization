@@ -1,15 +1,15 @@
 module PC(
     input clkIn,
     input resetIn,
-    input [31:0] AddrIn,
-    output reg[31:0] AddrOut
-);
+    input [31:0] AddressIn,
+    output reg[31:0] AddressOut
+    );
     always @(posedge clkIn) begin
         if(resetIn) begin
-            AddrOut <= 0;
+            AddressOut <= 0;
         end
         else begin
-            AddrOut <= AddrIn;
+            AddressOut <= AddressIn;
         end
     end
 endmodule

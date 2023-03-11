@@ -2,19 +2,19 @@
 module Controller(
     input [4:0] OPCode,
     output [2:0] AddressSelect,
-    output MenWrite,
+    output MemWrite,
     output MemRead,
     output [2:0] ALUOperation,
     output ALUDataSelect,
     output [1:0] RegisterDataSelect,
     output RegisterWrite
-);
-// 未完成
+    );
+
     always @(*) begin
         case (OPCode)
             OP_ADD: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b001;
                 ALUDataSelect = 1;
@@ -23,7 +23,7 @@ module Controller(
             end
             OP_ADDI: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b001;
                 ALUDataSelect = 0;
@@ -32,7 +32,7 @@ module Controller(
             end
             OP_SUB: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b010;
                 ALUDataSelect = 1;
@@ -41,7 +41,7 @@ module Controller(
             end
             OP_AND: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b011;
                 ALUDataSelect = 1;
@@ -50,7 +50,7 @@ module Controller(
             end
             OP_ANDI: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b011;
                 ALUDataSelect = 0;
@@ -59,7 +59,7 @@ module Controller(
             end
             OP_OR: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b100;
                 ALUDataSelect = 1;
@@ -68,7 +68,7 @@ module Controller(
             end
             OP_ORI: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b100;
                 ALUDataSelect = 0;
@@ -77,7 +77,7 @@ module Controller(
             end
             OP_XOR: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b101;
                 ALUDataSelect = 1;
@@ -86,7 +86,7 @@ module Controller(
             end
             OP_XORI: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b101;
                 ALUDataSelect = 0;
@@ -95,7 +95,7 @@ module Controller(
             end
             OP_SLL: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b110;
                 ALUDataSelect = 1;
@@ -104,7 +104,7 @@ module Controller(
             end
             OP_SLLI: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b110;
                 ALUDataSelect = 0;
@@ -113,7 +113,7 @@ module Controller(
             end
             OP_SRL: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b111;
                 ALUDataSelect = 1;
@@ -122,7 +122,7 @@ module Controller(
             end
             OP_SRLI: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b111;
                 ALUDataSelect = 0;
@@ -131,7 +131,7 @@ module Controller(
             end
             OP_LUI: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b000;
                 ALUDataSelect = 0;
@@ -140,7 +140,7 @@ module Controller(
             end
             OP_LW: begin
                 AddressSelect = 3'b000;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 1;
                 ALUOperation = 3'b001;
                 ALUDataSelect = 0;
@@ -149,7 +149,7 @@ module Controller(
             end
             OP_SW: begin
                 AddressSelect = 3'b000;
-                MenWrite = 1;
+                MemWrite = 1;
                 MemRead = 0;
                 ALUOperation = 3'b001;
                 ALUDataSelect = 0;
@@ -158,7 +158,7 @@ module Controller(
             end
             OP_BLT: begin
                 AddressSelect = 3'b001;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b000;
                 ALUDataSelect = 0;
@@ -167,7 +167,7 @@ module Controller(
             end
             OP_BEQ: begin
                 AddressSelect = 3'b010;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b010;
                 ALUDataSelect = 1;
@@ -176,7 +176,7 @@ module Controller(
             end
             OP_JAL: begin
                 AddressSelect = 3'b011;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b000;
                 ALUDataSelect = 0;
@@ -185,7 +185,7 @@ module Controller(
             end
             OP_JALR: begin
                 AddressSelect = 3'b100;
-                MenWrite = 0;
+                MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b001;
                 ALUDataSelect = 0;
