@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module WriteBackMUX(
     input [31:0] ALUResult,
     input [31:0] Imm32,

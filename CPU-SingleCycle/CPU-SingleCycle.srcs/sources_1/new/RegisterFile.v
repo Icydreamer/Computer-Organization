@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module RegisterFile(
     input clkIn,
     input resetIn,
@@ -8,7 +10,7 @@ module RegisterFile(
     input RegisterWrite,
     output [31:0] ReadData1,
     output [31:0] ReadData2,
-    output portOut
+    output [15:0] portOut
     );
     reg [31:0] Registers [31:0];
     integer i;
@@ -25,5 +27,5 @@ module RegisterFile(
     end
     assign ReadData1 = Registers[Register1];
     assign ReadData2 = Registers[Register2];
-    assign portOut=Reg[31][15:0]; //display result through R31
+    assign portOut = Registers[31][15:0]; //display result through R31
 endmodule

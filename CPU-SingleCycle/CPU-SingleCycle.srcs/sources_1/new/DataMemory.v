@@ -1,10 +1,12 @@
+`timescale 1ns / 1ps
+
 module DataMemory(
     input clkIn,
     input resetIn,
     input [31:0] AddressIn,//from alu
     input [31:0] WriteData,// from register
     input MemRead,//control
-    input MenWrite,
+    input MemWrite,
     output [31:0] ReadData
     );
     reg [31:0] Memory[31:0];
@@ -16,7 +18,7 @@ module DataMemory(
                 Memory[i] = 0;
             end
         end
-        else if(MenWrite) begin
+        else if(MemWrite) begin
             Memory[AddressIn] <= WriteData;
         end
     end

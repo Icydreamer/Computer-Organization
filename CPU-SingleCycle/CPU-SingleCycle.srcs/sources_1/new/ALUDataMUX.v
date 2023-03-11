@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module ALUDataMUX(
     input [31:0] RegisterData2,
     input [31:0] Imm32,

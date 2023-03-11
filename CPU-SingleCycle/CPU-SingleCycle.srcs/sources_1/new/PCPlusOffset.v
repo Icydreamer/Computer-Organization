@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module PCPlusOffset(
     input [31:0] offsetIn,
     input [31:0] AddressIn,

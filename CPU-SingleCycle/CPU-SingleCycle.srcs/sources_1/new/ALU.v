@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module ALU(
     input [31:0] ALUData1,
     input [31:0] ALUDtat2,

@@ -1,4 +1,6 @@
 `include "Defines.v"
+`timescale 1ns / 1ps
+
 module ImmGen(
     input [31:0] Instruction,
     output reg [31:0] Imm32Out

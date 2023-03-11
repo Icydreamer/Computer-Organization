@@ -18,8 +18,8 @@ module Computer(
 
     // IMem
     wire[31:0] IMem_InsOut;
-    Imem myIMem(
-        .AddressIn(PC_AddressOut)
+    IMem myIMem(
+        .AddressIn(PC_AddressOut),
         .InstructionOut(IMem_InsOut)
         );
 
@@ -45,7 +45,8 @@ module Computer(
 
     
     // RegisterFile
-    wire[31:0] DataMUX_DataOut;
+    wire[31:0] WriteBackMUX_DataOut;
+    wire[31:0] ALUDataMUX_DataOut;
     wire[31:0] RegisterFile_Data1Out;
     wire[31:0] RegisterFile_Data2Out;
     RegisterFile myRegisterFile(
@@ -54,10 +55,11 @@ module Computer(
         .Register1(IMem_InsOut[19:15]),
         .Register2(IMem_InsOut[24:20]),
         .RegisterDestination(IMem_InsOut[11:7]),
-        .WriteData(ALUDataMUX_DataOut),
+        .WriteData(WriteBackMUX_DataOut),
         .RegisterWrite(Controller_RegisterWrite),
         .ReadData1(RegisterFile_Data1Out),
-        .ReadData2(RegisterFile_Data2Out)
+        .ReadData2(RegisterFile_Data2Out),
+        .portOut(portOut)
         );
 
     // ImmGen
@@ -68,9 +70,8 @@ module Computer(
         );
 
     //ALUDataMUX
-    wire[31:0] ALUDataMUX_DataOut;
     ALUDataMUX myALUDataMUX(
-        .Register2(RegisterFile_Data2Out),
+        .RegisterData2(RegisterFile_Data2Out),
         .Imm32(ImmGen_Imm32Out),
         .ALUDataSelect(Controller_ALUDataSelect),
         .ALUData2Out(ALUDataMUX_DataOut)
@@ -100,12 +101,12 @@ module Computer(
     // PCPlusOne
     wire[31:0] PCPlusOne_AddressOut;
     PCPlusOne myPCPlusOne(
-        .AddressIn(PC_AddrOut),
+        .AddressIn(PC_AddressOut),
         .AddressOut(PCPlusOne_AddressOut)
         );
 
     // AddressMUX
-    assign PC_AddrIn = AddressMUX_AddressOut;
+    // assign PC_AddrIn = AddressMUX_AddressOut;
     AddressMUX myAddressMUX(
         .ALULess(ALU_LessOut),
         .ALUZero(ALU_ZeroOut),
@@ -134,8 +135,8 @@ module Computer(
         .Imm32(ImmGen_Imm32Out),
         .MemData(DataMemory_DataOut),
         .Address(PCPlusOne_AddressOut),
-        .egisterDataSelect(Controller_RegisterDataSelect),
-        .RegisterData(DataMUX_DataOut)
+        .RegisterDataSelect(Controller_RegisterDataSelect),
+        .RegisterData(WriteBackMUX_DataOut)
         );
 
 endmodule

@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module IMem(
     input [31:0] AddressIn,
     output [31:0] InstructionOut
