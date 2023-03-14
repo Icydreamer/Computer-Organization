@@ -13,7 +13,7 @@ module DataMemory(
     integer i;
     assign ReadData = MemRead? Memory[AddressIn]: 0;
     always @(posedge clkIn) begin
-        if(resetIn) begin
+        if(!resetIn) begin
             for(i = 0; i < 32; i = i + 1) begin
                 Memory[i] = 0;
             end

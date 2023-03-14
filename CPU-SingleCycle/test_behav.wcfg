@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="995245833fs"></ZoomStartTime>
+      <ZoomEndTime time="1000950834fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="162"></NameColumnWidth>
+      <ValueColumnWidth column_width="239"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/test/clkIn" type="logic">
+      <obj_property name="ElementShortName">clkIn</obj_property>
+      <obj_property name="ObjectShortName">clkIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/resetIn" type="logic">
+      <obj_property name="ElementShortName">resetIn</obj_property>
+      <obj_property name="ObjectShortName">resetIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/disp_seg_o" type="array">
+      <obj_property name="ElementShortName">disp_seg_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp_seg_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/disp_an_o" type="array">
+      <obj_property name="ElementShortName">disp_an_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp_an_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/myPC/AddressIn" type="array">
+      <obj_property name="ElementShortName">AddressIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AddressIn[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/myPC/AddressOut" type="array">
+      <obj_property name="ElementShortName">AddressOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AddressOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/disp_mode" type="logic">
+      <obj_property name="ElementShortName">disp_mode</obj_property>
+      <obj_property name="ObjectShortName">disp_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/i_data" type="array">
+      <obj_property name="ElementShortName">i_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/o_seg" type="array">
+      <obj_property name="ElementShortName">o_seg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_seg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/o_sel" type="array">
+      <obj_property name="ElementShortName">o_sel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_sel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[14:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/seg7_clk" type="logic">
+      <obj_property name="ElementShortName">seg7_clk</obj_property>
+      <obj_property name="ObjectShortName">seg7_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/seg7_addr" type="array">
+      <obj_property name="ElementShortName">seg7_addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">seg7_addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/o_sel_r" type="array">
+      <obj_property name="ElementShortName">o_sel_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_sel_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/i_data_store" type="array">
+      <obj_property name="ElementShortName">i_data_store[63:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data_store[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/seg_data_r" type="array">
+      <obj_property name="ElementShortName">seg_data_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_data_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/mySeg7x16/o_seg_r" type="array">
+      <obj_property name="ElementShortName">o_seg_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_seg_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/disp_seg_o" type="array">
+      <obj_property name="ElementShortName">disp_seg_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp_seg_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/disp_an_o" type="array">
+      <obj_property name="ElementShortName">disp_an_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp_an_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/Clk_CPU" type="logic">
+      <obj_property name="ElementShortName">Clk_CPU</obj_property>
+      <obj_property name="ObjectShortName">Clk_CPU</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/myComputer/clkdiv" type="array">
+      <obj_property name="ElementShortName">clkdiv[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clkdiv[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -163,7 +163,7 @@ module Controller(
                 MemWrite = 0;
                 MemRead = 0;
                 ALUOperation = 3'b000;
-                ALUDataSelect = 0;
+                ALUDataSelect = 1;
                 RegisterDataSelect = 2'b00;
                 RegisterWrite = 0;
             end

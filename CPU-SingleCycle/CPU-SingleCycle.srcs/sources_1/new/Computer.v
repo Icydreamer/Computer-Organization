@@ -1,17 +1,28 @@
 `timescale 1ns / 1ps
 
 module Computer(
-    input clkIn, //from outside
-    input resetIn, //from outside
-    output [15:0] portOut //to outside
+    input clk, //from outside
+    input rstn, //from outside
+    output [7:0] disp_seg_o,
+    output [7:0] disp_an_o
     );
-
+    
+    reg[31:0]clkdiv;
+    wire Clk_CPU;
+    
+    always @(posedge clk or negedge rstn) begin
+    if(!rstn) clkdiv <= 0;
+    else clkdiv <= clkdiv + 1'b1;
+    end
+    
+    assign Clk_CPU = clkdiv[20];
+    
     // PC
     wire[31:0] AddressMUX_AddressOut; 
     wire[31:0] PC_AddressOut;
     PC myPC(
-        .clkIn(clkIn),
-        .resetIn(resetIn),
+        .clkIn(Clk_CPU),
+        .resetIn(rstn),
         .AddressIn(AddressMUX_AddressOut),
         .AddressOut(PC_AddressOut)
         );
@@ -49,9 +60,10 @@ module Computer(
     wire[31:0] ALUDataMUX_DataOut;
     wire[31:0] RegisterFile_Data1Out;
     wire[31:0] RegisterFile_Data2Out;
+    wire [31:0] portOut;
     RegisterFile myRegisterFile(
-        .clkIn(clkIn),
-        .resetIn(resetIn),
+        .clkIn(Clk_CPU),
+        .resetIn(rstn),
         .Register1(IMem_InsOut[19:15]),
         .Register2(IMem_InsOut[24:20]),
         .RegisterDestination(IMem_InsOut[11:7]),
@@ -120,8 +132,8 @@ module Computer(
     // DataMemory
     wire[31:0] DataMemory_DataOut;
     DataMemory myDataMemory(
-        .clkIn(clkIn),
-        .resetIn(resetIn),
+        .clkIn(Clk_CPU),
+        .resetIn(rstn),
         .AddressIn(ALU_ResultOut),
         .WriteData(RegisterFile_Data2Out),
         .MemRead(Controller_MemRead),
@@ -138,5 +150,14 @@ module Computer(
         .RegisterDataSelect(Controller_RegisterDataSelect),
         .RegisterData(WriteBackMUX_DataOut)
         );
-
+        
+    // seg7x16
+    seg7x16 mySeg7x16(
+        .clk(clk),
+        .rstn(rstn),
+        .disp_mode(1'b0),
+        .i_data(portOut),
+        .o_seg(disp_seg_o),
+        .o_sel(disp_an_o)
+        );
 endmodule
