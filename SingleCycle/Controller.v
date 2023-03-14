@@ -28,7 +28,7 @@ module Controller(opcodeIn,ctrSignalsOut);
       5'b01110: ctrSignalsOut<=12'b101000000000; //lui
       5'b01111: ctrSignalsOut<=12'b110100000010; //lw
       5'b10000: ctrSignalsOut<=12'b000010000010; //sw
-      5'b10001: ctrSignalsOut<=12'b000000010000; //blt
+      5'b10001: ctrSignalsOut<=12'b000000010001; //blt
       5'b10010: ctrSignalsOut<=12'b000000100101; //beq
       5'b10011: ctrSignalsOut<=12'b111000110000; //jal
       5'b10100: ctrSignalsOut<=12'b111001000010; //jalr
