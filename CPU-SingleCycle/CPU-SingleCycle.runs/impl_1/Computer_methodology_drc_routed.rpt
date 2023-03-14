@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Mar 11 14:29:50 2023
+| Date         : Tue Mar 14 12:11:15 2023
 | Host         : LAPTOP-UHL51CUR running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Computer_methodology_drc_routed.rpt -pb Computer_methodology_drc_routed.pb -rpx Computer_methodology_drc_routed.rpx
 | Design       : Computer
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 116
-+-----------+----------+-----------------------------+------------+
-| Rule      | Severity | Description                 | Violations |
-+-----------+----------+-----------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell | 116        |
-+-----------+----------+-----------------------------+------------+
+             Violations found: 150
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 141        |
+| TIMING-18 | Warning  | Missing input or output delay | 9          |
++-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -409,207 +410,377 @@ Related violations: <none>
 
 TIMING-17#76 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][1]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#77 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][2]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#78 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][3]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#79 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][4]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#80 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][5]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#81 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][6]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][7]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#83 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][8]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#84 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[31][9]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#85 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][0]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#86 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][10]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#87 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][11]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#88 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][12]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#89 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][13]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#90 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][14]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#91 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][15]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][16]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][17]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][18]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][19]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][1]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#97 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][20]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#98 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][21]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#99 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][22]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#100 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][23]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[31][9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#101 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][24]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#102 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][25]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#103 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][26]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#104 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][27]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#105 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][28]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#106 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][29]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#107 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][2]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#108 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][30]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#109 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][31]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#110 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][3]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#111 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][4]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#112 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][5]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#113 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][6]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#114 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][7]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#115 Warning
 Non-clocked sequential cell  
-The clock pin myRegisterFile/Registers_reg[3][8]/C is not reached by a timing clock
+The clock pin myRegisterFile/Registers_reg[3][22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#116 Warning
 Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#117 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#118 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#119 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#125 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#126 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#127 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#128 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#129 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#130 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[3][8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Warning
+Non-clocked sequential cell  
 The clock pin myRegisterFile/Registers_reg[3][9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[5][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[6][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#135 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[6][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#136 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[7][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#137 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[7][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#138 Warning
+Non-clocked sequential cell  
+The clock pin myRegisterFile/Registers_reg[7][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#139 Warning
+Non-clocked sequential cell  
+The clock pin mySeg7x16/seg7_addr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#140 Warning
+Non-clocked sequential cell  
+The clock pin mySeg7x16/seg7_addr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#141 Warning
+Non-clocked sequential cell  
+The clock pin mySeg7x16/seg7_addr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rstn relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[7] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 

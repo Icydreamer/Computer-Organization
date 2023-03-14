@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -44,6 +42,7 @@ read_verilog -library xil_defaultlib {
   E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/PCPlusOneAddress.v
   E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/RegisterFile.v
   E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/WriteBackMUX.v
+  E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/seg7x16.v
   E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -54,6 +53,9 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/icf.xdc
+set_property used_in_implementation false [get_files E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/icf.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

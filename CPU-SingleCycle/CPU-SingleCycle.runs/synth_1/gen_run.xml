@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1678516081">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1678766978">
   <File Type="PA-TCL" Name="Computer.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Computer_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Computer_reports.tcl"/>
@@ -102,6 +102,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/seg7x16.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Computer.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -117,6 +124,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/sources_1/new/icf.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
