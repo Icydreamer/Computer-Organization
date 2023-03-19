@@ -29,13 +29,5 @@ module test(
     wire[7:0] disp_an_o;
     Computer myComputer(clkIn,resetIn,disp_seg_o,disp_an_o);
     initial begin clkIn=0; forever #1 clkIn=~clkIn; end
-    initial begin resetIn=0; #0.5 resetIn=1; #1 resetIn=0; end
-/*
-    initial begin 
-        clkIn=0; 
-        resetIn = 1;
-        #1 resetIn = 0;
-        forever 
-            #1 clkIn=~clkIn; 
-    end*/
+    initial begin resetIn=1; #0.5 resetIn=0; #1 resetIn=1; end
 endmodule
