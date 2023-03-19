@@ -1,0 +1,1743 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 19 13:27:25 2023
+# Process ID: 6044
+# Current directory: E:/homework/Computer-Organization/CPU-BasicPipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12040 E:\homework\Computer-Organization\CPU-BasicPipeline\CPU-BasicPipeline.xpr
+# Log file: E:/homework/Computer-Organization/CPU-BasicPipeline/vivado.log
+# Journal file: E:/homework/Computer-Organization/CPU-BasicPipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.xpr
+INFO: [Project 1-313] Project file moved from 'E:/homework/Computer-Organization/CPU-Pipeline' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado2018/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Computer
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 873.266 ; gain = 81.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Computer' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IMem' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMem' (2#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCPlusOne' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCPlusOne' (3#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IFID' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IFID' (4#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (5#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v:4]
+WARNING: [Synth 8-689] width (32) of port connection 'OPCode' does not match port width (5) of module 'Controller' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (6#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:4]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm12' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm6' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm20' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm7' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm5' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (7#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IDEX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IDEX' (8#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALUDataMUX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALUDataMUX' (9#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCPlusOffset' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCPlusOffset' (11#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXMEM' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'EXMEM' (12#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AddressMUX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AddressMUX' (13#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (14#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB' (15#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v:1]
+INFO: [Synth 8-6157] synthesizing module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBackMUX' (16#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v:3]
+WARNING: [Synth 8-689] width (2) of port connection 'RegisterDataSelect' does not match port width (1) of module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (17#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Computer' (18#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[31]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[30]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[29]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[28]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[27]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[26]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[25]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[24]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[23]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[22]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[21]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[20]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[19]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[18]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[17]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[16]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[15]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[14]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[13]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[12]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[11]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[10]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[9]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[8]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[7]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[6]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[5]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[4]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[2]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[1]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[0]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[31]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[30]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[29]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[28]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[27]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[26]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[25]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[24]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[23]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[22]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[21]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[20]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[19]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[18]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[17]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[16]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[15]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[14]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[13]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[12]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[11]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[10]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[9]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[8]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[7]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[6]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[5]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[4]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[2]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[1]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[0]
+WARNING: [Synth 8-3331] design IDEX has unconnected port ALUDataSelectIn
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[6]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[5]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[31]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[30]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[29]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[28]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[27]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[26]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[25]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[24]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[23]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[22]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[21]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[20]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[19]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[18]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[17]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[16]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[15]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[14]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[13]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[12]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[11]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[10]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[9]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[8]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[7]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[6]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[5]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 911.508 ; gain = 119.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[4] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[3] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[2] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[1] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[0] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 911.508 ; gain = 119.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 911.508 ; gain = 119.402
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[0]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[1]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[2]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[3]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[4]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[5]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[6]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[7]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[8]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[9]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[10]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[11]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[12]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[13]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[14]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[15]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1273.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1333.531 ; gain = 541.426
+42 Infos, 141 Warnings, 33 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1333.531 ; gain = 541.426
+close_design
+launch_runs synth_1 -jobs 6
+[Sun Mar 19 13:40:28 2023] Launched synth_1...
+Run output will be captured here: E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Sun Mar 19 13:41:23 2023] Launched impl_1...
+Run output will be captured here: E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Mar 19 13:42:23 2023] Launched impl_1...
+Run output will be captured here: E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B61DF4A
+set_property PROGRAM.FILE {E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.runs/impl_1/Computer.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.runs/impl_1/Computer.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 19 13:45:30 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2173.199 ; gain = 11.688
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2515.051 ; gain = 288.480
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2515.051 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/test/myComputer/myPC/AddressIn}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Time resolution is 1 ps
+INFO: [Common 17-344] 'relaunch_xsim_kernel' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/test/myComputer/myPC/AddressOut}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/test/myComputer/myPC/AddressIn}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/test/myComputer/myIMem/InstructionOut}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2515.051 ; gain = 0.000
+save_wave_config {E:/homework/Computer-Organization/CPU-BasicPipeline/test_behav.wcfg}
+add_files -fileset sim_1 -norecurse E:/homework/Computer-Organization/CPU-BasicPipeline/test_behav.wcfg
+set_property xsim.view E:/homework/Computer-Organization/CPU-BasicPipeline/test_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2515.051 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2515.051 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2515.051 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2515.051 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Computer
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2759.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Computer' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IMem' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMem' (2#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCPlusOne' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCPlusOne' (3#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IFID' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IFID' (4#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (5#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v:4]
+WARNING: [Synth 8-689] width (32) of port connection 'OPCode' does not match port width (5) of module 'Controller' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (6#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:4]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm12' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm6' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm20' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm7' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm5' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (7#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IDEX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IDEX' (8#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALUDataMUX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALUDataMUX' (9#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCPlusOffset' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCPlusOffset' (11#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXMEM' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'EXMEM' (12#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AddressMUX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AddressMUX' (13#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:3]
+WARNING: [Synth 8-5788] Register Memory_reg[31] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[30] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[29] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[28] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[27] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[26] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[25] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[24] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[23] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[22] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[21] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[20] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[19] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[18] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[17] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[16] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[15] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[14] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[13] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[12] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[11] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[10] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[9] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[8] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[7] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[6] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[5] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[4] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[3] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[2] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[1] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+WARNING: [Synth 8-5788] Register Memory_reg[0] in module DataMemory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (14#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB' (15#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v:1]
+INFO: [Synth 8-6157] synthesizing module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBackMUX' (16#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v:3]
+WARNING: [Synth 8-689] width (2) of port connection 'RegisterDataSelect' does not match port width (1) of module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (17#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Computer' (18#1) [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[31]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[30]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[29]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[28]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[27]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[26]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[25]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[24]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[23]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[22]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[21]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[20]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[19]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[18]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[17]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[16]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[15]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[14]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[13]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[12]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[11]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[10]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[9]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[8]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[7]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[6]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[5]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[4]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[2]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[1]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[0]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[31]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[30]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[29]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[28]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[27]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[26]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[25]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[24]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[23]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[22]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[21]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[20]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[19]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[18]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[17]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[16]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[15]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[14]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[13]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[12]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[11]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[10]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[9]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[8]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[7]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[6]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[5]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[4]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[3]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[2]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[1]
+WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port Address[0]
+WARNING: [Synth 8-3331] design IDEX has unconnected port ALUDataSelectIn
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[6]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[5]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[31]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[30]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[29]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[28]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[27]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[26]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[25]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[24]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[23]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[22]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[21]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[20]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[19]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[18]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[17]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[16]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[15]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[14]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[13]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[12]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[11]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[10]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[9]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[8]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[7]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[6]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[5]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2759.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[4] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[3] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[2] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[1] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+WARNING: [Synth 8-3295] tying undriven pin myIDEX:rdIn[0] to constant 0 [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:120]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2759.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2759.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[0]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[1]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[2]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[3]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[4]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[5]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[6]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[7]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[8]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[9]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[10]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[11]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[12]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[13]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[14]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw_i[15]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/icf.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2759.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2759.555 ; gain = 0.000
+41 Infos, 173 Warnings, 33 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+close_design
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {E:/homework/Computer-Organization/CPU-BasicPipeline/test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config E:/homework/Computer-Organization/CPU-BasicPipeline/test_behav.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2759.555 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {E:/homework/Computer-Organization/CPU-BasicPipeline/test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config E:/homework/Computer-Organization/CPU-BasicPipeline/test_behav.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2759.555 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUDataMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOffset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCPlusOne
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBackMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2863.703 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:67]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:315]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v:324]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUDataMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCPlusOffset
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.AddressMUX
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2863.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 19 14:12:26 2023...
