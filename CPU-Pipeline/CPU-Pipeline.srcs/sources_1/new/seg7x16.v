@@ -1,4 +1,27 @@
 `timescale 1ns / 1ps
+<<<<<<< HEAD
+=======
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2022/11/27 10:16:28
+// Design Name: 
+// Module Name: seg7x16
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+>>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
 
 module seg7x16(
     input clk,
@@ -18,7 +41,11 @@ module seg7x16(
         else
             cnt <= cnt + 1'b1;
     end
+<<<<<<< HEAD
     assign seg7_clk = cnt[1];
+=======
+    assign seg7_clk = cnt[14];
+>>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
     
     reg [2:0] seg7_addr;
     always @(posedge seg7_clk, negedge rstn) begin

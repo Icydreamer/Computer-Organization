@@ -12,7 +12,11 @@ module EXMEM(
     input ALULessIn,
     input ALUZeroIn,
     input [31:0] ALUResultIn,
+<<<<<<< HEAD
     input [31:0] Data2In,
+=======
+    input [31:0] Data2In.
+>>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
     input [31:0] Imm32In,
     input [31:0] PCRelAddressIn,
     input [31:0] retAddressIn,
@@ -27,6 +31,7 @@ module EXMEM(
     output reg ALULessOut,
     output reg ALUZeroOut,
     output reg [31:0] ALUResultOut,
+<<<<<<< HEAD
     output reg [31:0] DataOut,
     output reg [31:0] Imm32Out,
     output reg [31:0] PCRelAddressOut,
@@ -34,6 +39,15 @@ module EXMEM(
     output reg [4:0] rdOut
     );
     always @(posedge clkIn, negedge resetIn) begin
+=======
+    output reg [31:0] Data2Out,
+    output reg [31:0] Imm32Out,
+    output reg [31:0] PCRelAddressOut,
+    output reg [31:0] retAddressOut,
+    output reg [4:0] rdIn
+    );
+    always @(posedge clk, negedge resetIn) begin
+>>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         if (!resetIn) begin
             //control
             AddressSelectOut <= 0;
@@ -45,7 +59,11 @@ module EXMEM(
             ALULessOut <= 0;
             ALUZeroOut <= 0;
             ALUResultOut <= 0;
+<<<<<<< HEAD
             DataOut <= 0;
+=======
+            Data2Out <= 0;
+>>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
             Imm32Out <= 0;
             PCRelAddressOut <= 0;
             retAddressOut <= 0;
@@ -62,7 +80,11 @@ module EXMEM(
             ALULessOut <= ALULessIn;
             ALUZeroOut <= ALUZeroIn;
             ALUResultOut <= ALUResultIn;
+<<<<<<< HEAD
             DataOut <= Data2In;
+=======
+            Data2Out <= Data2In;
+>>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
             Imm32Out <= Imm32In;
             PCRelAddressOut <= PCRelAddressIn;
             retAddressOut <= retAddressIn;

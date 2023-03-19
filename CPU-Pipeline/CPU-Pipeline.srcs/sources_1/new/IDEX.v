@@ -32,7 +32,11 @@ module IDEX(
     output reg [31:0] AddressOut,
     output reg [4:0] rdOut//
     );
+<<<<<<< HEAD
     always @(posedge clkIn, negedge resetIn) begin
+=======
+    always @(posedge clk, negedge resetIn) begin
+>>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         if (!resetIn) begin
             //control
             AddressSelectOut <= 0;
