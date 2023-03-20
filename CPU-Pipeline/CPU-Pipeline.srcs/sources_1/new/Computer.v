@@ -15,11 +15,7 @@ module Computer(
     else clkdiv <= clkdiv + 1'b1;
     end
     
-<<<<<<< HEAD
     assign Clk_CPU = clkdiv[0];
-=======
-    assign Clk_CPU = clkdiv[20];
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
     
     // PC
     wire[31:0] AddressMUX_AddressOut; 
@@ -37,7 +33,6 @@ module Computer(
         .AddressIn(PC_AddressOut),
         .InstructionOut(IMem_InsOut)
         );
-<<<<<<< HEAD
     
     // SeqAddressAdder
     wire[31:0] SeqAddressAdder_AddressOut;
@@ -77,60 +72,24 @@ module Computer(
         .ALUDataSelect(Controller_ALUDataSelectOut),
         .RegisterDataSelect(Controller_RegisterDataSelectOut),
         .RegisterWrite(Controller_RegisterWriteOut)
-=======
-
-    // Controller
-    wire [2:0] Controller_AddressSelect;
-    wire Controller_MemWrite;
-    wire Controller_MemRead;
-    wire [2:0] Controller_ALUOperation;
-    wire Controller_ALUDataSelect;
-    wire [1:0] Controller_RegisterDataSelect;
-    wire Controller_RegisterWrite;
-
-    Controller myController (
-        .OPCode(IMem_InsOut[4:0]),
-        .AddressSelect(Controller_AddressSelect),
-        .MemWrite(Controller_MemWrite),
-        .MemRead(Controller_MemRead),
-        .ALUOperation(Controller_ALUOperation),
-        .ALUDataSelect(Controller_ALUDataSelect),
-        .RegisterDataSelect(Controller_RegisterDataSelect),
-        .RegisterWrite(Controller_RegisterWrite)
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         );
 
     
     // RegisterFile
-<<<<<<< HEAD
     wire [31:0] WriteBackMUX_DataOut;
     wire [4:0] MEMWB_rdOut;
     wire MEMWB_RegisterWriteOut;
     wire [31:0] RegisterFile_Data1Out;
     wire [31:0] RegisterFile_Data2Out;
-=======
-    wire[31:0] WriteBackMUX_DataOut;
-    wire[31:0] ALUDataMUX_DataOut;
-    wire[31:0] RegisterFile_Data1Out;
-    wire[31:0] RegisterFile_Data2Out;
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
     wire [31:0] portOut;
     RegisterFile myRegisterFile(
         .clkIn(Clk_CPU),
         .resetIn(rstn),
-<<<<<<< HEAD
         .Register1(IFID_InsOut[19:15]),
         .Register2(IFID_InsOut[24:20]),
         .RegisterDestination(MEMWB_rdOut),
         .WriteData(WriteBackMUX_DataOut),
         .RegisterWrite(MEMWB_RegisterWriteOut),
-=======
-        .Register1(IMem_InsOut[19:15]),
-        .Register2(IMem_InsOut[24:20]),
-        .RegisterDestination(IMem_InsOut[11:7]),
-        .WriteData(WriteBackMUX_DataOut),
-        .RegisterWrite(Controller_RegisterWrite),
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         .ReadData1(RegisterFile_Data1Out),
         .ReadData2(RegisterFile_Data2Out),
         .portOut(portOut)
@@ -139,7 +98,6 @@ module Computer(
     // ImmGen
     wire[31:0] ImmGen_Imm32Out;
     ImmGen myImmGen(
-<<<<<<< HEAD
         .Instruction(IFID_InsOut),
         .Imm32Out(ImmGen_Imm32Out)
         );
@@ -202,17 +160,6 @@ module Computer(
         .RegisterData2(IDEX_Data2Out),
         .Imm32(IDEX_Imm32Out),
         .ALUDataSelect(IDEX_ALUDataSelectOut),
-=======
-        .Instruction(IMem_InsOut),
-        .Imm32Out(ImmGen_Imm32Out)
-        );
-
-    //ALUDataMUX
-    ALUDataMUX myALUDataMUX(
-        .RegisterData2(RegisterFile_Data2Out),
-        .Imm32(ImmGen_Imm32Out),
-        .ALUDataSelect(Controller_ALUDataSelect),
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         .ALUData2Out(ALUDataMUX_DataOut)
         );
 
@@ -221,15 +168,9 @@ module Computer(
     wire ALU_ZeroOut;
     wire[31:0] ALU_ResultOut;
     ALU myALU(
-<<<<<<< HEAD
         .ALUData1(IDEX_Data1Out),
         .ALUDtat2(ALUDataMUX_DataOut),
         .ALUOperation(IDEX_ALUOperationOut),
-=======
-        .ALUData1(RegisterFile_Data1Out),
-        .ALUDtat2(ALUDataMUX_DataOut),
-        .ALUOperation(Controller_ALUOperation),
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         .ALULess(ALU_LessOut),
         .ALUZero(ALU_ZeroOut),
         .ALUResult(ALU_ResultOut)
@@ -238,18 +179,12 @@ module Computer(
     // PCPlusOffset
     wire[31:0] PCPlusOffset_AddressOut;
     PCPlusOffset myPCPlusOffset(
-<<<<<<< HEAD
         .offsetIn(IDEX_Imm32Out),
         .AddressIn(IDEX_AddressOut),
-=======
-        .offsetIn(ImmGen_Imm32Out),
-        .AddressIn(PC_AddressOut),
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         .AddressOut(PCPlusOffset_AddressOut)
         );
 
     // PCPlusOne
-<<<<<<< HEAD
     wire[31:0] RetAddressAdder_AddressOut;
     PCPlusOne myRetAddressAdder(
         .AddressIn(IDEX_AddressOut),
@@ -320,23 +255,6 @@ module Computer(
         .PCPlusOffset(EXMEM_PCRelAddressOut),
         .PCPlusOne(SeqAddressAdder_AddressOut),
         .AddressSelect(EXMEM_AddressSelectOut),
-=======
-    wire[31:0] PCPlusOne_AddressOut;
-    PCPlusOne myPCPlusOne(
-        .AddressIn(PC_AddressOut),
-        .AddressOut(PCPlusOne_AddressOut)
-        );
-
-    // AddressMUX
-    // assign PC_AddrIn = AddressMUX_AddressOut;
-    AddressMUX myAddressMUX(
-        .ALULess(ALU_LessOut),
-        .ALUZero(ALU_ZeroOut),
-        .ALUResult(ALU_ResultOut),
-        .PCPlusOffset(PCPlusOffset_AddressOut),
-        .PCPlusOne(PCPlusOne_AddressOut),
-        .AddressSelect(Controller_AddressSelect),
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         .AddressOut(AddressMUX_AddressOut)
         );
 
@@ -345,7 +263,6 @@ module Computer(
     DataMemory myDataMemory(
         .clkIn(Clk_CPU),
         .resetIn(rstn),
-<<<<<<< HEAD
         .AddressIn(EXMEM_ResultOut),
         .WriteData(EXMEM_DataOut),
         .MemRead(EXMEM_MemReadOut),
@@ -396,22 +313,6 @@ module Computer(
         .MemData(MEMWB_DataOut),
         .Address(MEMWB_RetAddressOut),
         .RegisterDataSelect(MEMWB_RegisterDataSelectOut),
-=======
-        .AddressIn(ALU_ResultOut),
-        .WriteData(RegisterFile_Data2Out),
-        .MemRead(Controller_MemRead),
-        .MemWrite(Controller_MemWrite),
-        .ReadData(DataMemory_DataOut)
-        );
-
-    // WriteBackMUX
-    WriteBackMUX myWriteBackMUX(
-        .ALUResult(ALU_ResultOut),
-        .Imm32(ImmGen_Imm32Out),
-        .MemData(DataMemory_DataOut),
-        .Address(PCPlusOne_AddressOut),
-        .RegisterDataSelect(Controller_RegisterDataSelect),
->>>>>>> e7caab919607f42aac18ce0c961f2bf754f465d5
         .RegisterData(WriteBackMUX_DataOut)
         );
         
