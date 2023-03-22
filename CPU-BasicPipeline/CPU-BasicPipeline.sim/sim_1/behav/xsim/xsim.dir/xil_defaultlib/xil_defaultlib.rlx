@@ -1,0 +1,25 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v,1679469118,verilog,,,,test,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALU.v,1678511380,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v,,ALU,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ALUDataMUX.v,1678511377,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v,,ALUDataMUX,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/AddressMUX.v,1678511393,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v,,AddressMUX,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v,1679488878,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v,,Computer,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Controler.v,1678679377,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Defines.v,Controller,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/DataMemory.v,1679278299,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v,,DataMemory,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Defines.v,1678071132,verilog,,,,,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/EXMEM.v,1679278298,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v,,EXMEM,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IDEX.v,1679278300,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v,,IDEX,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IFID.v,1679278300,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v,,IFID,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/IMem.v,1679457845,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v,,IMem,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/ImmGen.v,1678511372,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Defines.v,ImmGen,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/MEMWB.v,1679278301,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v,,MEMWB,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PC.v,1679492358,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v,,PC,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v,1678511385,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v,,PCPlusOffset,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v,1678511389,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v,,PCPlusOne,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v,1679453762,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v,,RegisterFile,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v,1678511406,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v,,WriteBackMUX,,,,,,,,
+E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v,1679469230,verilog,,E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sim_1/new/test.v,,seg7x16,,,,,,,,
