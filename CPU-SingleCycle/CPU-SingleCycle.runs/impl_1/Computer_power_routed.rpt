@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Mar 14 12:11:16 2023
+| Date             : Mon Mar 20 11:50:35 2023
 | Host             : LAPTOP-UHL51CUR running 64-bit major release  (build 9200)
 | Command          : report_power -file Computer_power_routed.rpt -pb Computer_power_summary_routed.pb -rpx Computer_power_routed.rpx
 | Design           : Computer
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      920 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      558 |     63400 |            0.88 |
-|   CARRY4       |    <0.001 |       24 |     15850 |            0.15 |
-|   Register     |    <0.001 |      216 |    126800 |            0.17 |
-|   F7/F8 Muxes  |    <0.001 |       14 |     63400 |            0.02 |
+| Slice Logic    |    <0.001 |      693 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      353 |     63400 |            0.56 |
+|   CARRY4       |    <0.001 |       39 |     15850 |            0.25 |
+|   Register     |    <0.001 |      219 |    126800 |            0.17 |
+|   F7/F8 Muxes  |    <0.001 |        6 |     63400 |           <0.01 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    <0.001 |      838 |       --- |             --- |
-| I/O            |     0.003 |       18 |       210 |            8.57 |
+| Signals        |    <0.001 |      598 |       --- |             --- |
+| I/O            |     0.003 |       20 |       210 |            9.52 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.101 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
+| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,7 +143,6 @@ Table of Contents
 | Name     | Power (W) |
 +----------+-----------+
 | Computer |     0.004 |
-|   myPC   |     0.001 |
 +----------+-----------+
 
 

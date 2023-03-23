@@ -8,6 +8,8 @@ module RegisterFile(
     input [4:0] RegisterDestination,
     input [31:0] WriteData,
     input RegisterWrite,
+    input [31:0] AddressIn,
+    input dispmode,
     output [31:0] ReadData1,
     output [31:0] ReadData2,
     output [31:0] portOut
@@ -19,7 +21,7 @@ module RegisterFile(
             Registers[i] = i;
         end
     end
-    always @(posedge clkIn) begin
+    always @(posedge clkIn, negedge resetIn) begin
         if(!resetIn) begin
             for(i = 0; i < 32; i = i + 1) begin
                 Registers[i] <= 0;
@@ -32,5 +34,5 @@ module RegisterFile(
     end
     assign ReadData1 = Registers[Register1];
     assign ReadData2 = Registers[Register2];
-    assign portOut = Registers[31][31:0]; //display result through R31
+    assign portOut = dispmode? Registers[1][31:0]: AddressIn; //display result through R31
 endmodule

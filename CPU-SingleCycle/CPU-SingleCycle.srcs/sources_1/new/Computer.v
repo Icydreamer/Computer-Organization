@@ -3,6 +3,7 @@
 module Computer(
     input clk, //from outside
     input rstn, //from outside
+    input [15:0] sw_i,
     output [7:0] disp_seg_o,
     output [7:0] disp_an_o
     );
@@ -15,7 +16,7 @@ module Computer(
     else clkdiv <= clkdiv + 1'b1;
     end
     
-    assign Clk_CPU = clkdiv[20];
+    assign Clk_CPU = sw_i[15]?clkdiv[25]: clkdiv[20];
     
     // PC
     wire[31:0] AddressMUX_AddressOut; 
@@ -69,6 +70,8 @@ module Computer(
         .RegisterDestination(IMem_InsOut[11:7]),
         .WriteData(WriteBackMUX_DataOut),
         .RegisterWrite(Controller_RegisterWrite),
+        .AddressIn(PC_AddressOut),
+        .dispmode(sw_i[0]),
         .ReadData1(RegisterFile_Data1Out),
         .ReadData2(RegisterFile_Data2Out),
         .portOut(portOut)

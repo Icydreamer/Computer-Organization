@@ -6,7 +6,7 @@ module PC(
     input [31:0] AddressIn,
     output reg[31:0] AddressOut
     );
-    always @(posedge clkIn) begin
+    always @(posedge clkIn, negedge resetIn) begin
         if(!resetIn) begin
             AddressOut <= 0;
         end
