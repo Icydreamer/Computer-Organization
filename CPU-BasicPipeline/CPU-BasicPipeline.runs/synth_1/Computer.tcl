@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -47,6 +45,7 @@ read_verilog -library xil_defaultlib {
   E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v
   E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v
   E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v
+  E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/SixteenToTen.v
   E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v
   E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v
   E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/Computer.v

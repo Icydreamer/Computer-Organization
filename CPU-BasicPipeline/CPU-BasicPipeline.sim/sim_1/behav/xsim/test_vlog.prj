@@ -16,6 +16,7 @@ verilog xil_defaultlib  \
 "../../../../CPU-BasicPipeline.srcs/sources_1/new/PCPlusOffset.v" \
 "../../../../CPU-BasicPipeline.srcs/sources_1/new/PCPlusOneAddress.v" \
 "../../../../CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" \
+"../../../../CPU-BasicPipeline.srcs/sources_1/new/SixteenToTen.v" \
 "../../../../CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" \
 "../../../../CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" \
 "../../../../CPU-BasicPipeline.srcs/sim_1/new/test.v" \

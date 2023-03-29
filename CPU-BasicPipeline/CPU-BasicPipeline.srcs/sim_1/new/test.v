@@ -40,7 +40,7 @@ module test(
         #1 resetIn=1; 
     end
     initial begin
-        sw_i = 16'b0000_0000_0000_0001;
+        sw_i = 16'b0100_0000_0000_0001;
     end
     Computer myComputer(clkIn,resetIn,sw_i,disp_seg_o,disp_an_o);
 /*

@@ -19,7 +19,7 @@ module seg7x16(
         else
             cnt <= cnt + 1'b1;
     end
-    assign seg7_clk = sw_i[15]?cnt[14]:cnt[0];
+    assign seg7_clk = sw_i[14]?cnt[14]:cnt[0];
     //debug
     reg [2:0] seg7_addr;
     always @(posedge seg7_clk, negedge rstn) begin

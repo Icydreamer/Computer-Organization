@@ -16,7 +16,7 @@ module Computer(
     else clkdiv <= clkdiv + 1'b1;
     end
     // debug
-    assign Clk_CPU = sw_i[15]? clkdiv[25]: clkdiv[0];
+    assign Clk_CPU = sw_i[15]? clkdiv[25]: clkdiv[22];
     
     // PC
     wire[31:0] AddressMUX_AddressOut; 
@@ -319,12 +319,18 @@ module Computer(
         .RegisterData(WriteBackMUX_DataOut)
         );
         
+    //16to10
+    wire [31:0] DataTen;
+    SixteenToTen mySixteenToTen(
+        .num(portOut),
+        .numConverted(DataTen)
+        );
     // seg7x16
     seg7x16 mySeg7x16(
         .clk(clk),
         .rstn(rstn),
         .disp_mode(1'b0),
-        .i_data(portOut),
+        .i_data(DataTen),
         .sw_i(sw_i),
         .o_seg(disp_seg_o),
         .o_sel(disp_an_o)

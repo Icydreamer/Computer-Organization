@@ -30,6 +30,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/C
 INFO: [VRFC 10-311] analyzing module PCPlusOne
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/SixteenToTen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SixteenToTen
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/WriteBackMUX.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WriteBackMUX
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/homework/Computer-Organization/CPU-BasicPipeline/CPU-BasicPipeline.srcs/sources_1/new/seg7x16.v" into library xil_defaultlib
