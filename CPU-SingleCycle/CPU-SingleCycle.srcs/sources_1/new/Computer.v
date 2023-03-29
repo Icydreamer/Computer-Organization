@@ -154,12 +154,19 @@ module Computer(
         .RegisterData(WriteBackMUX_DataOut)
         );
         
+    //16to10
+    wire [31:0] DataTen;
+    SixteenToTen mySixteenToTen(
+        .num(portOut),
+        .numConverted(DataTen)
+        );
     // seg7x16
     seg7x16 mySeg7x16(
         .clk(clk),
         .rstn(rstn),
         .disp_mode(1'b0),
-        .i_data(portOut),
+        .i_data(DataTen),
+        .sw_i(sw_i),
         .o_seg(disp_seg_o),
         .o_sel(disp_an_o)
         );

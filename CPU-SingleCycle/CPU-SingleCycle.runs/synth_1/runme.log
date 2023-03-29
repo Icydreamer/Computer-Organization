@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12336 
+INFO: Helper process launched with PID 24368 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.031 ; gain = 98.363
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.074 ; gain = 98.066
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Computer' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:3]
 INFO: [Synth 8-6157] synthesizing module 'PC' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/PC.v:3]
@@ -83,10 +83,27 @@ INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (11#1) [E:/homework/C
 INFO: [Synth 8-6157] synthesizing module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/WriteBackMUX.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'WriteBackMUX' (12#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/WriteBackMUX.v:3]
 WARNING: [Synth 8-689] width (2) of port connection 'RegisterDataSelect' does not match port width (1) of module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:153]
+INFO: [Synth 8-6157] synthesizing module 'SixteenToTen' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/SixteenToTen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SixteenToTen' (13#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/SixteenToTen.v:23]
 INFO: [Synth 8-6157] synthesizing module 'seg7x16' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/seg7x16.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/seg7x16.v:110]
-INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (13#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/seg7x16.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Computer' (14#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/seg7x16.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (14#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/seg7x16.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Computer' (15#1) [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:3]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[1]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[0]
 WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[31]
 WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[30]
 WARNING: [Synth 8-3331] design WriteBackMUX has unconnected port MemData[29]
@@ -172,24 +189,9 @@ WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[16]
 WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[15]
 WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[14]
 WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[13]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[12]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[11]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[10]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[9]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[8]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[7]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[6]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[5]
-WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[4]
-WARNING: [Synth 8-3331] design Computer has unconnected port sw_i[14]
-WARNING: [Synth 8-3331] design Computer has unconnected port sw_i[13]
-WARNING: [Synth 8-3331] design Computer has unconnected port sw_i[12]
-WARNING: [Synth 8-3331] design Computer has unconnected port sw_i[11]
-WARNING: [Synth 8-3331] design Computer has unconnected port sw_i[10]
-WARNING: [Synth 8-3331] design Computer has unconnected port sw_i[9]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 495.863 ; gain = 157.195
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 495.824 ; gain = 156.816
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -202,10 +204,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 495.863 ; gain = 157.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 495.824 ; gain = 156.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 495.863 ; gain = 157.195
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 495.824 ; gain = 156.816
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -267,30 +269,30 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 Finished Parsing XDC File [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/icf.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Computer_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Computer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 863.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 863.785 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 863.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 863.211 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 863.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 863.844 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 863.844 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 863.211 ; gain = 524.543
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 863.844 ; gain = 524.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 863.211 ; gain = 524.543
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 863.844 ; gain = 524.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 863.211 ; gain = 524.543
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 863.844 ; gain = 524.836
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "Registers_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Registers_reg[30]" won't be mapped to RAM because it is too sparse
@@ -368,7 +370,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'RegisterDataSelect_reg' [E:
 WARNING: [Synth 8-327] inferring latch for variable 'RegisterWrite_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Controler.v:24]
 WARNING: [Synth 8-327] inferring latch for variable 'RegisterData_reg' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/WriteBackMUX.v:13]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 863.211 ; gain = 524.543
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 863.844 ; gain = 524.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -383,6 +385,8 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 2     
+	   4 Input     32 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
@@ -400,7 +404,7 @@ Detailed RTL Component Info :
 	  21 Input      3 Bit        Muxes := 1     
 	  21 Input      2 Bit        Muxes := 1     
 	  21 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 67    
+	   2 Input      1 Bit        Muxes := 68    
 	  16 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -472,6 +476,11 @@ Module WriteBackMUX
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
+Module SixteenToTen 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 1     
 Module seg7x16 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -483,7 +492,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 	  16 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -534,6 +543,51 @@ INFO: [Synth 8-5545] ROM "Memory_reg[3]" won't be mapped to RAM because address 
 INFO: [Synth 8-5545] ROM "Memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][0]' (FDCE) to 'myRegisterFile/Registers_reg[18][0]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][0]' (FDCE) to 'myRegisterFile/Registers_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][0]' (FDCE) to 'myRegisterFile/Registers_reg[14][0]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][0]' (FDCE) to 'myRegisterFile/Registers_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][0]' (FDCE) to 'myRegisterFile/Registers_reg[10][0]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][0]' (FDCE) to 'myRegisterFile/Registers_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][0]' (FDCE) to 'myRegisterFile/Registers_reg[7][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[10][0] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][0]' (FDCE) to 'myRegisterFile/Registers_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][1]' (FDCE) to 'myRegisterFile/Registers_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][1]' (FDCE) to 'myRegisterFile/Registers_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][1]' (FDCE) to 'myRegisterFile/Registers_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][1]' (FDCE) to 'myRegisterFile/Registers_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][1]' (FDCE) to 'myRegisterFile/Registers_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][1]' (FDCE) to 'myRegisterFile/Registers_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][1]' (FDCE) to 'myRegisterFile/Registers_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][1]' (FDCE) to 'myRegisterFile/Registers_reg[7][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[9][1] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][2]' (FDCE) to 'myRegisterFile/Registers_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][2]' (FDCE) to 'myRegisterFile/Registers_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][2]' (FDCE) to 'myRegisterFile/Registers_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][2]' (FDCE) to 'myRegisterFile/Registers_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][2]' (FDCE) to 'myRegisterFile/Registers_reg[7][2]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][2]' (FDCE) to 'myRegisterFile/Registers_reg[7][2]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][2]' (FDCE) to 'myRegisterFile/Registers_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][2]' (FDCE) to 'myRegisterFile/Registers_reg[9][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[9][2] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][3]' (FDCE) to 'myRegisterFile/Registers_reg[9][3]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][3]' (FDCE) to 'myRegisterFile/Registers_reg[7][3]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][3]' (FDCE) to 'myRegisterFile/Registers_reg[7][3]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][3]' (FDCE) to 'myRegisterFile/Registers_reg[7][3]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][3]' (FDCE) to 'myRegisterFile/Registers_reg[9][3]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][3]' (FDCE) to 'myRegisterFile/Registers_reg[9][3]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][3]' (FDCE) to 'myRegisterFile/Registers_reg[9][3]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][3]' (FDCE) to 'myRegisterFile/Registers_reg[9][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][3] )
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][4]' (FDCE) to 'myRegisterFile/Registers_reg[17][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][4]' (FDCE) to 'myRegisterFile/Registers_reg[17][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][4]' (FDCE) to 'myRegisterFile/Registers_reg[17][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][4]' (FDCE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][4]' (FDCE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][4]' (FDCE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][4]' (FDCE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][4]' (FDCE) to 'myRegisterFile/Registers_reg[7][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][4] )
 INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][5]' (FDCE) to 'myRegisterFile/Registers_reg[7][5]'
 INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][5]' (FDCE) to 'myRegisterFile/Registers_reg[7][5]'
 INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][5]' (FDCE) to 'myRegisterFile/Registers_reg[7][5]'
@@ -600,52 +654,12 @@ INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][11]' (FD
 INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][11]' (FDCE) to 'myRegisterFile/Registers_reg[7][11]'
 INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][11]' (FDCE) to 'myRegisterFile/Registers_reg[7][11]'
 INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][11]' (FDCE) to 'myRegisterFile/Registers_reg[7][11]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][11]' (FDCE) to 'myRegisterFile/Registers_reg[7][11]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][11]' (FDCE) to 'myRegisterFile/Registers_reg[7][11]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][11]' (FDCE) to 'myRegisterFile/Registers_reg[7][11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][11] )
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][12]' (FDCE) to 'myRegisterFile/Registers_reg[7][12]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][12] )
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][13]' (FDCE) to 'myRegisterFile/Registers_reg[7][13]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][13] )
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][14]' (FDCE) to 'myRegisterFile/Registers_reg[7][14]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][14] )
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[19][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[18][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[17][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[14][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[13][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[11][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[10][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[9][15]' (FDCE) to 'myRegisterFile/Registers_reg[7][15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][15] )
-INFO: [Synth 8-3886] merging instance 'myRegisterFile/Registers_reg[24][16]' (FDCE) to 'myRegisterFile/Registers_reg[7][16]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][16] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][17] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][18] )
@@ -662,12 +676,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegiste
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][29] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][30] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[10][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[9][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (myRegisterFile/\Registers_reg[7][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (mySeg7x16/\i_data_store_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mySeg7x16/\i_data_store_reg[20] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (mySeg7x16/\o_seg_r_reg[7] )
 WARNING: [Synth 8-3332] Sequential element (MemWrite_reg) is unused and will be removed from module Controller.
 WARNING: [Synth 8-3332] Sequential element (MemRead_reg) is unused and will be removed from module Controller.
@@ -705,7 +714,7 @@ WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[2]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[1]) is unused and will be removed from module WriteBackMUX.
 WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[0]) is unused and will be removed from module WriteBackMUX.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 863.211 ; gain = 524.543
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 863.844 ; gain = 524.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -717,6 +726,7 @@ ROM:
 +------------+---------------+---------------+----------------+
 |Controller  | ALUOperation  | 32x3          | LUT            | 
 |Controller  | ALUDataSelect | 32x1          | LUT            | 
+|Controller  | ALUOperation  | 32x3          | LUT            | 
 |Controller  | ALUDataSelect | 32x1          | LUT            | 
 +------------+---------------+---------------+----------------+
 
@@ -733,13 +743,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 863.211 ; gain = 524.543
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 863.844 ; gain = 524.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 863.211 ; gain = 524.543
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 863.844 ; gain = 524.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -750,37 +760,37 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][12] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][14] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][3] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myRegisterFile/Registers_reg[6][31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myController/AddressSelect_reg[2] )
 WARNING: [Synth 8-3332] Sequential element (myController/AddressSelect_reg[2]) is unused and will be removed from module Computer.
 WARNING: [Synth 8-3332] Sequential element (myController/AddressSelect_reg[1]) is unused and will be removed from module Computer.
@@ -792,7 +802,7 @@ WARNING: [Synth 8-3332] Sequential element (myController/ALUDataSelect_reg) is u
 WARNING: [Synth 8-3332] Sequential element (myController/RegisterDataSelect_reg[0]) is unused and will be removed from module Computer.
 WARNING: [Synth 8-3332] Sequential element (myController/RegisterWrite_reg) is unused and will be removed from module Computer.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 901.715 ; gain = 563.047
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 932.609 ; gain = 593.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -816,7 +826,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 901.715 ; gain = 563.047
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 932.609 ; gain = 593.602
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -829,7 +839,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 901.715 ; gain = 563.047
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 932.609 ; gain = 593.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -841,25 +851,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 901.715 ; gain = 563.047
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 932.609 ; gain = 593.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 901.715 ; gain = 563.047
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 932.609 ; gain = 593.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 901.715 ; gain = 563.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 932.609 ; gain = 593.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 901.715 ; gain = 563.047
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 932.609 ; gain = 593.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -876,57 +886,57 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    39|
-|3     |LUT1   |     7|
-|4     |LUT2   |    29|
-|5     |LUT3   |    95|
-|6     |LUT4   |   135|
-|7     |LUT5   |   157|
-|8     |LUT6   |   494|
-|9     |MUXF7  |     6|
-|10    |FDCE   |   244|
-|11    |FDPE   |     7|
-|12    |IBUF   |     4|
-|13    |OBUF   |    16|
+|2     |CARRY4 |   287|
+|3     |LUT1   |    28|
+|4     |LUT2   |   252|
+|5     |LUT3   |   563|
+|6     |LUT4   |   469|
+|7     |LUT5   |   311|
+|8     |LUT6   |   777|
+|9     |FDCE   |   226|
+|10    |FDPE   |     7|
+|11    |IBUF   |     4|
+|12    |OBUF   |    16|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-----------------+-------------+------+
 |      |Instance         |Module       |Cells |
 +------+-----------------+-------------+------+
-|1     |top              |             |  1235|
+|1     |top              |             |  2942|
 |2     |  myALUDataMUX   |ALUDataMUX   |    32|
 |3     |  myIMem         |IMem         |     1|
-|4     |  myImmGen       |ImmGen       |     6|
-|5     |  myPC           |PC           |   518|
+|4     |  myImmGen       |ImmGen       |     8|
+|5     |  myPC           |PC           |   492|
 |6     |  myPCPlusOffset |PCPlusOffset |    40|
 |7     |  myPCPlusOne    |PCPlusOne    |     8|
-|8     |  myRegisterFile |RegisterFile |   437|
-|9     |  mySeg7x16      |seg7x16      |    93|
-|10    |  myWriteBackMUX |WriteBackMUX |    40|
+|8     |  myRegisterFile |RegisterFile |   675|
+|9     |  mySeg7x16      |seg7x16      |    70|
+|10    |  mySixteenToTen |SixteenToTen |  1513|
+|11    |  myWriteBackMUX |WriteBackMUX |    38|
 +------+-----------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 901.715 ; gain = 563.047
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 932.609 ; gain = 593.602
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 160 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 901.715 ; gain = 195.699
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 901.715 ; gain = 563.047
+Synthesis finished with 0 errors, 0 critical warnings and 161 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 932.609 ; gain = 225.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 932.609 ; gain = 593.602
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 287 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 932.609 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-310 Infos, 208 Warnings, 17 Critical Warnings and 0 Errors encountered.
+312 Infos, 208 Warnings, 17 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 901.715 ; gain = 576.332
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.715 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 932.609 ; gain = 606.559
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 932.609 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.runs/synth_1/Computer.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Computer_utilization_synth.rpt -pb Computer_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 20 11:49:14 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 26 11:19:18 2023...

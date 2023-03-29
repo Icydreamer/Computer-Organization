@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Mar 20 11:48:34 2023
-# Process ID: 2652
+# Start of session at: Sun Mar 26 11:18:44 2023
+# Process ID: 25420
 # Current directory: E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.runs/synth_1
 # Command line: vivado.exe -log Computer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Computer.tcl
 # Log file: E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.runs/synth_1/Computer.vds
