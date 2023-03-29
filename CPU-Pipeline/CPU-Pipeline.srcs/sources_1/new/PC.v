@@ -4,14 +4,23 @@ module PC(
     input clkIn,
     input resetIn,
     input [31:0] AddressIn,
-    output reg[31:0] AddressOut
+    input FlushIn,
+    input StallIn,
+    output reg [31:0] AddressOut
     );
+    reg [31:0] Address;
     always @(posedge clkIn, negedge resetIn) begin
         if(!resetIn) begin
-            AddressOut <= 0;
+            Address <= 0;
         end
-        else begin
-            AddressOut <= AddressIn;
+        else if(FlushIn) begin
+            Address <= AddressIn;
         end
+        else if(StallIn == 0) begin
+            Address <= AddressIn;
+        end
+    end
+    always @(negedge clkIn) begin
+        AddressOut <= Address;
     end
 endmodule

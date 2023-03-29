@@ -5,14 +5,14 @@ module WriteBackMUX(
     input [31:0] Imm32,
     input [31:0] MemData,
     input [31:0] Address,
-    input RegisterDataSelect,
+    input [1:0] RegisterDataSelect,
     output reg [31:0] RegisterData
     );
 
-    always @(*) begin
+    always @(ALUResult, Imm32, MemData, Address, RegisterDataSelect) begin
         if (RegisterDataSelect==0) RegisterData <= ALUResult;
-        else if (RegisterDataSelect== 2'b01) RegisterData <= Imm32;
-        else if (RegisterDataSelect== 2'b10) RegisterData <= MemData;
-        else if(RegisterDataSelect == 2'b11)RegisterData <= Address;
+        else if (RegisterDataSelect== 1) RegisterData <= Imm32;
+        else if (RegisterDataSelect== 2) RegisterData <= MemData;
+        else if(RegisterDataSelect == 3)RegisterData <= Address;
     end
 endmodule

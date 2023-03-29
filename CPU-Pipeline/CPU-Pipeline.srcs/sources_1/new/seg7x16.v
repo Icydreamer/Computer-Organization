@@ -5,6 +5,7 @@ module seg7x16(
     input rstn,
     input disp_mode,
     input [63:0] i_data,
+    input [15:0] sw_i,
     output [7:0] o_seg,
     output [7:0] o_sel
     );
@@ -18,7 +19,7 @@ module seg7x16(
         else
             cnt <= cnt + 1'b1;
     end
-    assign seg7_clk = cnt[1];
+    assign seg7_clk = sw_i[14]?cnt[14]:cnt[0];
     
     reg [2:0] seg7_addr;
     always @(posedge seg7_clk, negedge rstn) begin

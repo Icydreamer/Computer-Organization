@@ -21,29 +21,48 @@ module MEMWB(
     output reg [31:0] retAddressOut,
     output reg [4:0] rdOut
     );
+    reg [1:0] RegisterDataSelect;
+    reg RegisterWrite;
+
+    reg [31:0] ALUResult;
+    reg [31:0] Data;
+    reg [31:0] Imm32;
+    reg [31:0] retAddress;
+    reg [4:0] rd;
     always @(posedge clkIn, negedge resetIn) begin
         if (!resetIn) begin
             //control
-            RegisterDataSelectOut <= 0;
-            RegisterWriteOut <= 0;
+            RegisterDataSelect <= 0;
+            RegisterWrite <= 0;
 
 
-            ALUResultOut <= 0;
-            DataOut <= 0;
-            Imm32Out <= 0;
-            retAddressOut <= 0;
-            rdOut <= 0;
+            ALUResult <= 0;
+            Data <= 0;
+            Imm32 <= 0;
+            retAddress <= 0;
+            rd <= 0;
         end
         else begin
             //control
-            RegisterDataSelectOut <= RegisterDataSelectIn;
-            RegisterWriteOut <= RegisterWriteIn;
+            RegisterDataSelect <= RegisterDataSelectIn;
+            RegisterWrite <= RegisterWriteIn;
 
-            ALUResultOut <= ALUResultIn;
-            DataOut <= DataIn;
-            Imm32Out <= Imm32In;
-            retAddressOut <= retAddressIn;
-            rdOut <= rdIn;
+            ALUResult <= ALUResultIn;
+            Data <= DataIn;
+            Imm32 <= Imm32In;
+            retAddress <= retAddressIn;
+            rd <= rdIn;
         end
+    end
+    always @(negedge clkIn) begin
+        //control
+        RegisterDataSelectOut <= RegisterDataSelect;
+        RegisterWriteOut <= RegisterWrite;
+
+        ALUResultOut <= ALUResult;
+        DataOut <= Data;
+        Imm32Out <= Imm32;
+        retAddressOut <= retAddress;
+        rdOut <= rd;
     end
 endmodule

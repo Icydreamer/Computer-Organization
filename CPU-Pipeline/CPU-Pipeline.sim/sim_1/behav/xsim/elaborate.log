@@ -1,27 +1,38 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 0ddaed1b41634c27b08b58b9e807323c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Computer_behav xil_defaultlib.Computer xil_defaultlib.glbl -log elaborate.log 
+Running: F:/Vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 608a9378dd294718b525952210bd2906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'RegisterDataSelect' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:150]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-SingleCycle/CPU-SingleCycle.srcs/sources_1/new/Computer.v:159]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'OPCode' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Computer.v:79]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'MEMWBrdIn' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Computer.v:354]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'i_data' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Computer.v:404]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PC
 Compiling module xil_defaultlib.IMem
+Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.IFID
 Compiling module xil_defaultlib.Controller
 Compiling module xil_defaultlib.RegisterFile
 Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.IDEX
 Compiling module xil_defaultlib.ALUDataMUX
 Compiling module xil_defaultlib.ALU
 Compiling module xil_defaultlib.PCPlusOffset
-Compiling module xil_defaultlib.PCPlusOne
+Compiling module xil_defaultlib.EXMEM
 Compiling module xil_defaultlib.AddressMUX
 Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
 Compiling module xil_defaultlib.WriteBackMUX
+Compiling module xil_defaultlib.FWD
+Compiling module xil_defaultlib.FWDMUX
+Compiling module xil_defaultlib.Stall
+Compiling module xil_defaultlib.Flush
+Compiling module xil_defaultlib.SixteenToTen
 Compiling module xil_defaultlib.seg7x16
 Compiling module xil_defaultlib.Computer
+Compiling module xil_defaultlib.test
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot Computer_behav
+Built simulation snapshot test_behav

@@ -8,15 +8,17 @@ module RegisterFile(
     input [4:0] RegisterDestination,
     input [31:0] WriteData,
     input RegisterWrite,
-    output [31:0] ReadData1,
-    output [31:0] ReadData2,
-    output [31:0] portOut
+    input [31:0] AddressIn,
+    input [15:0] sw_i,
+    output reg [31:0] ReadData1,
+    output reg [31:0] ReadData2,
+    output reg [31:0] portOut
     );
     reg [31:0] Registers [31:0];
     integer i;
     initial begin
         for(i = 0; i < 32; i = i + 1) begin
-            Registers[i] = i;
+            Registers[i] = 0;
         end
     end
     always @(posedge clkIn, negedge resetIn) begin
@@ -30,7 +32,9 @@ module RegisterFile(
             Registers[RegisterDestination] <= WriteData;
         end
     end
-    assign ReadData1 = Registers[Register1];
-    assign ReadData2 = Registers[Register2];
-    assign portOut = Registers[31][31:0]; //display result through R31
+    always @(negedge clkIn) begin
+        ReadData1 = Registers[Register1];
+        ReadData2 = Registers[Register2];
+        portOut = sw_i[0]? Registers[3][31:0]: AddressIn;
+    end
 endmodule

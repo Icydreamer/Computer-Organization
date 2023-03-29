@@ -1,0 +1,935 @@
+
+*** Running vivado
+    with args -log Computer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Computer.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Computer.tcl -notrace
+Command: synth_design -top Computer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.234 ; gain = 97.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Computer' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Computer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IMem' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/IMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IMem' (2#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/IMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCPlusOne' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/PCPlusOneAddress.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCPlusOne' (3#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/PCPlusOneAddress.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IFID' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/IFID.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IFID' (4#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/IFID.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (5#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:4]
+WARNING: [Synth 8-689] width (32) of port connection 'OPCode' does not match port width (5) of module 'Controller' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Computer.v:79]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (6#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ImmGen.v:4]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm12' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm6' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm20' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm7' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ImmGen.v:22]
+WARNING: [Synth 8-567] referenced signal 'imm5' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ImmGen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (7#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ImmGen.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IDEX' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/IDEX.v:1]
+WARNING: [Synth 8-6014] Unused sequential element ALUDataSelect_reg was removed.  [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/IDEX.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'IDEX' (8#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/IDEX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALUDataMUX' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ALUDataMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALUDataMUX' (9#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ALUDataMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCPlusOffset' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/PCPlusOffset.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCPlusOffset' (11#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/PCPlusOffset.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXMEM' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/EXMEM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'EXMEM' (12#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/EXMEM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AddressMUX' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/AddressMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AddressMUX' (13#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/AddressMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (14#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/MEMWB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB' (15#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/MEMWB.v:1]
+INFO: [Synth 8-6157] synthesizing module 'WriteBackMUX' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/WriteBackMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBackMUX' (16#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/WriteBackMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FWD' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/FWD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FWD' (17#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/FWD.v:1]
+WARNING: [Synth 8-689] width (5) of port connection 'MEMWBrdIn' does not match port width (1) of module 'FWD' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Computer.v:354]
+INFO: [Synth 8-6157] synthesizing module 'FWDMUX' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/FWDMUX..v:1]
+WARNING: [Synth 8-567] referenced signal 'IDEXRegisterData2In' should be on the sensitivity list [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/FWDMUX..v:39]
+INFO: [Synth 8-6155] done synthesizing module 'FWDMUX' (18#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/FWDMUX..v:1]
+INFO: [Synth 8-6157] synthesizing module 'Stall' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Stall.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Stall' (19#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Stall.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Flush' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Flush.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Flush' (20#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Flush.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SixteenToTen' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/SixteenToTen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SixteenToTen' (21#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/SixteenToTen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/seg7x16.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/seg7x16.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (22#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/seg7x16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Computer' (23#1) [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Computer.v:3]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[1]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[0]
+WARNING: [Synth 8-3331] design IDEX has unconnected port ALUDataSelectIn
+WARNING: [Synth 8-3331] design IDEX has unconnected port FlushIn
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[6]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[5]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[1]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[31]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[30]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[29]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[28]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[27]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[26]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[25]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[24]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[23]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[22]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[21]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[20]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[19]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[18]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[17]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[16]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[15]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[14]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[13]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[12]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[11]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[10]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[9]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[8]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[7]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[6]
+WARNING: [Synth 8-3331] design IMem has unconnected port AddressIn[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 494.188 ; gain = 154.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 494.188 ; gain = 154.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 494.188 ; gain = 154.719
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Computer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Computer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 862.898 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 862.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 862.945 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 862.945 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 862.945 ; gain = 523.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 862.945 ; gain = 523.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 862.945 ; gain = 523.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Registers_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/ALU.v:12]
+INFO: [Synth 8-5545] ROM "ALUZero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'AddressSelect_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOperation_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUDataSelect_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'RegisterDataSelect_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'RegisterWrite_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Controler.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'RegisterData_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/WriteBackMUX.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'ForwardAOut_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/FWD.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'ForwardBOut_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/FWD.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'StallOut_reg' [E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.srcs/sources_1/new/Stall.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 862.945 ; gain = 523.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 100   
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 14    
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 21    
+	  14 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 10    
+	  21 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 77    
+	  21 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Computer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PCPlusOne 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module IFID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+Module Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	  21 Input      3 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 4     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 35    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+Module ImmGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+Module IDEX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+	                5 Bit    Registers := 6     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+Module ALUDataMUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module PCPlusOffset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module EXMEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 10    
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module AddressMUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 33    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module MEMWB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module WriteBackMUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module FWD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module Stall 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Flush 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 1     
+Module SixteenToTen 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 1     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "ALUZero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[1]
+WARNING: [Synth 8-3331] design seg7x16 has unconnected port sw_i[0]
+WARNING: [Synth 8-3331] design IDEX has unconnected port ALUDataSelectIn
+WARNING: [Synth 8-3331] design IDEX has unconnected port FlushIn
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[6]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[5]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design RegisterFile has unconnected port sw_i[1]
+INFO: [Synth 8-3886] merging instance 'myIFID/Instruction_reg[24]' (FDCE) to 'myIFID/Instruction_reg[25]'
+INFO: [Synth 8-3886] merging instance 'myIFID/Instruction_reg[25]' (FDCE) to 'myIFID/Instruction_reg[26]'
+INFO: [Synth 8-3886] merging instance 'myIFID/Instruction_reg[26]' (FDCE) to 'myIFID/Instruction_reg[27]'
+INFO: [Synth 8-3886] merging instance 'myIFID/Instruction_reg[27]' (FDCE) to 'myIFID/Instruction_reg[28]'
+INFO: [Synth 8-3886] merging instance 'myIFID/Instruction_reg[28]' (FDCE) to 'myIFID/Instruction_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIFID/Instruction_reg[29]' (FDCE) to 'myIFID/Instruction_reg[30]'
+INFO: [Synth 8-3886] merging instance 'myIFID/InstructionOut_reg[24]' (FD_1) to 'myIFID/InstructionOut_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIFID/InstructionOut_reg[25]' (FD_1) to 'myIFID/InstructionOut_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIFID/InstructionOut_reg[26]' (FD_1) to 'myIFID/InstructionOut_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIFID/InstructionOut_reg[27]' (FD_1) to 'myIFID/InstructionOut_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIFID/InstructionOut_reg[28]' (FD_1) to 'myIFID/InstructionOut_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIFID/InstructionOut_reg[29]' (FD_1) to 'myIFID/InstructionOut_reg[30]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/AddressSelectOut_reg[0]' (FD_1) to 'myIDEX/ALUDataSelectOut_reg'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[56]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[48]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[40]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[32]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[24]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[16]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[57]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[49]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[41]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[33]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[25]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[17]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[58]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[50]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[42]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[34]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[26]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[18]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[59]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[51]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[43]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[35]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[27]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[19]' (FDC) to 'mySeg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[63]' (FDC) to 'mySeg7x16/i_data_store_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[55]' (FDC) to 'mySeg7x16/i_data_store_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[47]' (FDC) to 'mySeg7x16/i_data_store_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[39]' (FDC) to 'mySeg7x16/i_data_store_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[31]' (FDC) to 'mySeg7x16/i_data_store_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[23]' (FDC) to 'mySeg7x16/i_data_store_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[62]' (FDC) to 'mySeg7x16/i_data_store_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[54]' (FDC) to 'mySeg7x16/i_data_store_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[46]' (FDC) to 'mySeg7x16/i_data_store_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[38]' (FDC) to 'mySeg7x16/i_data_store_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[30]' (FDC) to 'mySeg7x16/i_data_store_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[22]' (FDC) to 'mySeg7x16/i_data_store_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[61]' (FDC) to 'mySeg7x16/i_data_store_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[53]' (FDC) to 'mySeg7x16/i_data_store_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[45]' (FDC) to 'mySeg7x16/i_data_store_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[37]' (FDC) to 'mySeg7x16/i_data_store_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[29]' (FDC) to 'mySeg7x16/i_data_store_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[21]' (FDC) to 'mySeg7x16/i_data_store_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[60]' (FDC) to 'mySeg7x16/i_data_store_reg[52]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[52]' (FDC) to 'mySeg7x16/i_data_store_reg[44]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[44]' (FDC) to 'mySeg7x16/i_data_store_reg[36]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[36]' (FDC) to 'mySeg7x16/i_data_store_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mySeg7x16/i_data_store_reg[28]' (FDC) to 'mySeg7x16/i_data_store_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mySeg7x16/\i_data_store_reg[20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (mySeg7x16/\o_seg_r_reg[7] )
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32_reg[24]' (FDC) to 'myIDEX/Imm32_reg[25]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32_reg[25]' (FDC) to 'myIDEX/Imm32_reg[26]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32_reg[26]' (FDC) to 'myIDEX/Imm32_reg[27]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32_reg[27]' (FDC) to 'myIDEX/Imm32_reg[28]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32_reg[28]' (FDC) to 'myIDEX/Imm32_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32_reg[29]' (FDC) to 'myIDEX/Imm32_reg[30]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32Out_reg[24]' (FD_1) to 'myIDEX/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32Out_reg[25]' (FD_1) to 'myIDEX/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32Out_reg[26]' (FD_1) to 'myIDEX/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32Out_reg[27]' (FD_1) to 'myIDEX/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32Out_reg[28]' (FD_1) to 'myIDEX/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myIDEX/Imm32Out_reg[29]' (FD_1) to 'myIDEX/Imm32Out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32_reg[24]' (FDC) to 'myEXMEM/Imm32_reg[25]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32_reg[25]' (FDC) to 'myEXMEM/Imm32_reg[26]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32_reg[26]' (FDC) to 'myEXMEM/Imm32_reg[27]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32_reg[27]' (FDC) to 'myEXMEM/Imm32_reg[28]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32_reg[28]' (FDC) to 'myEXMEM/Imm32_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32_reg[29]' (FDC) to 'myEXMEM/Imm32_reg[30]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32Out_reg[24]' (FD_1) to 'myEXMEM/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32Out_reg[25]' (FD_1) to 'myEXMEM/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32Out_reg[26]' (FD_1) to 'myEXMEM/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32Out_reg[27]' (FD_1) to 'myEXMEM/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32Out_reg[28]' (FD_1) to 'myEXMEM/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myEXMEM/Imm32Out_reg[29]' (FD_1) to 'myEXMEM/Imm32Out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32_reg[24]' (FDC) to 'myMEMWB/Imm32_reg[25]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32_reg[25]' (FDC) to 'myMEMWB/Imm32_reg[26]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32_reg[26]' (FDC) to 'myMEMWB/Imm32_reg[27]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32_reg[27]' (FDC) to 'myMEMWB/Imm32_reg[28]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32_reg[28]' (FDC) to 'myMEMWB/Imm32_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32_reg[29]' (FDC) to 'myMEMWB/Imm32_reg[30]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32Out_reg[24]' (FD_1) to 'myMEMWB/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32Out_reg[25]' (FD_1) to 'myMEMWB/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32Out_reg[26]' (FD_1) to 'myMEMWB/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32Out_reg[27]' (FD_1) to 'myMEMWB/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32Out_reg[28]' (FD_1) to 'myMEMWB/Imm32Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'myMEMWB/Imm32Out_reg[29]' (FD_1) to 'myMEMWB/Imm32Out_reg[30]'
+WARNING: [Synth 8-3332] Sequential element (ALUDataSelect_reg) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[31]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[30]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[29]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[28]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[27]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[26]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[25]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[24]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[23]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[22]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[21]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[20]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[19]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[18]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[17]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[16]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[15]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[14]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[13]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[12]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[11]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[10]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[9]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[8]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[7]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[6]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[5]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[4]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[3]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[2]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[1]) is unused and will be removed from module WriteBackMUX.
+WARNING: [Synth 8-3332] Sequential element (RegisterData_reg[0]) is unused and will be removed from module WriteBackMUX.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 862.945 ; gain = 523.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------+---------------+----------------+
+|Module Name | RTL Object    | Depth x Width | Implemented As | 
++------------+---------------+---------------+----------------+
+|IMem        | ROM           | 32x32         | LUT            | 
+|Controller  | ALUOperation  | 32x3          | LUT            | 
+|Controller  | ALUDataSelect | 32x1          | LUT            | 
+|Controller  | ALUOperation  | 32x3          | LUT            | 
+|Controller  | ALUDataSelect | 32x1          | LUT            | 
+|Computer    | myIMem/ROM    | 32x32         | LUT            | 
++------------+---------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 862.945 ; gain = 523.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 871.805 ; gain = 532.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'myIFID/Instruction_reg[18]' (FDCE) to 'myIFID/Instruction_reg[19]'
+INFO: [Synth 8-3886] merging instance 'myIFID/Instruction_reg[31]' (FDCE) to 'myIFID/Instruction_reg[30]'
+INFO: [Synth 8-3886] merging instance 'myIFID/InstructionOut_reg[18]' (FD_1) to 'myIFID/InstructionOut_reg[19]'
+INFO: [Synth 8-3886] merging instance 'myIFID/InstructionOut_reg[31]' (FD_1) to 'myIFID/InstructionOut_reg[30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 931.773 ; gain = 592.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 931.773 ; gain = 592.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 931.773 ; gain = 592.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 931.773 ; gain = 592.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 931.773 ; gain = 592.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 931.773 ; gain = 592.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 931.773 ; gain = 592.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   295|
+|3     |LUT1   |    78|
+|4     |LUT2   |   674|
+|5     |LUT3   |   572|
+|6     |LUT4   |   419|
+|7     |LUT5   |   290|
+|8     |LUT6   |  1456|
+|9     |MUXF7  |   321|
+|10    |FDCE   |  2646|
+|11    |FDPE   |     7|
+|12    |FDRE   |   674|
+|13    |LD     |    17|
+|14    |LDC    |     2|
+|15    |IBUF   |     5|
+|16    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+-------------+------+
+|      |Instance            |Module       |Cells |
++------+--------------------+-------------+------+
+|1     |top                 |             |  7474|
+|2     |  SeqAddressAdder   |PCPlusOne    |     8|
+|3     |  myALUDataMUX      |ALUDataMUX   |    32|
+|4     |  myController      |Controller   |    22|
+|5     |  myDataMemory      |DataMemory   |  1481|
+|6     |  myEXMEM           |EXMEM        |   524|
+|7     |  myFWD             |FWD          |   384|
+|8     |  myFlush           |Flush        |     1|
+|9     |  myIDEX            |IDEX         |   469|
+|10    |  myIFID            |IFID         |   213|
+|11    |  myIMem            |IMem         |     9|
+|12    |  myImmGen          |ImmGen       |    13|
+|13    |  myMEMWB           |MEMWB        |   292|
+|14    |  myPC              |PC           |   118|
+|15    |  myPCPlusOffset    |PCPlusOffset |    72|
+|16    |  myRegisterFile    |RegisterFile |  2165|
+|17    |  myRetAddressAdder |PCPlusOne_0  |     8|
+|18    |  mySeg7x16         |seg7x16      |    70|
+|19    |  mySixteenToTen    |SixteenToTen |  1494|
+|20    |  myStall           |Stall        |     2|
+|21    |  myWriteBackMUX    |WriteBackMUX |    32|
++------+--------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 931.773 ; gain = 592.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 78 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 931.773 ; gain = 223.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 931.773 ; gain = 592.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 635 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 931.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LD => LDCE: 17 instances
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+263 Infos, 166 Warnings, 17 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 931.773 ; gain = 605.637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 931.773 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/homework/Computer-Organization/CPU-Pipeline/CPU-Pipeline.runs/synth_1/Computer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Computer_utilization_synth.rpt -pb Computer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 22:16:18 2023...

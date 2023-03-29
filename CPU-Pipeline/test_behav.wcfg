@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="38620000fs"></ZoomStartTime>
+      <ZoomEndTime time="64039622fs"></ZoomEndTime>
+      <Cursor1Time time="47000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="290"></NameColumnWidth>
+      <ValueColumnWidth column_width="164"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="group47" type="group">
+      <obj_property name="label">New Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/test/clkIn" type="logic">
+         <obj_property name="ElementShortName">clkIn</obj_property>
+         <obj_property name="ObjectShortName">clkIn</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/clkIn" type="logic">
+         <obj_property name="ElementShortName">clkIn</obj_property>
+         <obj_property name="ObjectShortName">clkIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/resetIn" type="logic">
+         <obj_property name="ElementShortName">resetIn</obj_property>
+         <obj_property name="ObjectShortName">resetIn</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/sw_i" type="array">
+         <obj_property name="ElementShortName">sw_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sw_i[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/disp_seg_o" type="array">
+         <obj_property name="ElementShortName">disp_seg_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">disp_seg_o[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/disp_an_o" type="array">
+         <obj_property name="ElementShortName">disp_an_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">disp_an_o[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/AddressIn" type="array">
+         <obj_property name="ElementShortName">AddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressIn[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/AddressOut" type="array">
+         <obj_property name="ElementShortName">AddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressOut[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/Address" type="array">
+         <obj_property name="ElementShortName">Address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/InstructionIn" type="array">
+         <obj_property name="ElementShortName">InstructionIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">InstructionIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/FlushIn" type="logic">
+         <obj_property name="ElementShortName">FlushIn</obj_property>
+         <obj_property name="ObjectShortName">FlushIn</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/StallIn" type="logic">
+         <obj_property name="ElementShortName">StallIn</obj_property>
+         <obj_property name="ObjectShortName">StallIn</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/AddressOut" type="array">
+         <obj_property name="ElementShortName">AddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressOut[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/PCPlusOffset" type="array">
+         <obj_property name="ElementShortName">PCPlusOffset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlusOffset[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/PCPlusOne" type="array">
+         <obj_property name="ElementShortName">PCPlusOne[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlusOne[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group49" type="group">
+      <obj_property name="label">PC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myPC/clkIn" type="logic">
+         <obj_property name="ElementShortName">clkIn</obj_property>
+         <obj_property name="ObjectShortName">clkIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/resetIn" type="logic">
+         <obj_property name="ElementShortName">resetIn</obj_property>
+         <obj_property name="ObjectShortName">resetIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/AddressIn" type="array">
+         <obj_property name="ElementShortName">AddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/FlushIn" type="logic">
+         <obj_property name="ElementShortName">FlushIn</obj_property>
+         <obj_property name="ObjectShortName">FlushIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/StallIn" type="logic">
+         <obj_property name="ElementShortName">StallIn</obj_property>
+         <obj_property name="ObjectShortName">StallIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/AddressOut" type="array">
+         <obj_property name="ElementShortName">AddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myPC/Address" type="array">
+         <obj_property name="ElementShortName">Address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Address[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group50" type="group">
+      <obj_property name="label">IFID</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myIFID/clkIn" type="logic">
+         <obj_property name="ElementShortName">clkIn</obj_property>
+         <obj_property name="ObjectShortName">clkIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/resetIn" type="logic">
+         <obj_property name="ElementShortName">resetIn</obj_property>
+         <obj_property name="ObjectShortName">resetIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/InstructionIn" type="array">
+         <obj_property name="ElementShortName">InstructionIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">InstructionIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/AddressIn" type="array">
+         <obj_property name="ElementShortName">AddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/FlushIn" type="logic">
+         <obj_property name="ElementShortName">FlushIn</obj_property>
+         <obj_property name="ObjectShortName">FlushIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/StallIn" type="logic">
+         <obj_property name="ElementShortName">StallIn</obj_property>
+         <obj_property name="ObjectShortName">StallIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/rs1Out" type="array">
+         <obj_property name="ElementShortName">rs1Out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1Out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/rs2Out" type="array">
+         <obj_property name="ElementShortName">rs2Out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2Out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/InstructionOut" type="array">
+         <obj_property name="ElementShortName">InstructionOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">InstructionOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/AddressOut" type="array">
+         <obj_property name="ElementShortName">AddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/rs1" type="array">
+         <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/rs2" type="array">
+         <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/Instruction" type="array">
+         <obj_property name="ElementShortName">Instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIFID/Address" type="array">
+         <obj_property name="ElementShortName">Address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Address[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group51" type="group">
+      <obj_property name="label">IDEX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myIDEX/clkIn" type="logic">
+         <obj_property name="ElementShortName">clkIn</obj_property>
+         <obj_property name="ObjectShortName">clkIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/resetIn" type="logic">
+         <obj_property name="ElementShortName">resetIn</obj_property>
+         <obj_property name="ObjectShortName">resetIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/AddressSelectIn" type="array">
+         <obj_property name="ElementShortName">AddressSelectIn[2:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressSelectIn[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/MemWriteIn" type="logic">
+         <obj_property name="ElementShortName">MemWriteIn</obj_property>
+         <obj_property name="ObjectShortName">MemWriteIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/MemReadIn" type="logic">
+         <obj_property name="ElementShortName">MemReadIn</obj_property>
+         <obj_property name="ObjectShortName">MemReadIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/ALUOperationIn" type="array">
+         <obj_property name="ElementShortName">ALUOperationIn[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUOperationIn[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/ALUDataSelectIn" type="logic">
+         <obj_property name="ElementShortName">ALUDataSelectIn</obj_property>
+         <obj_property name="ObjectShortName">ALUDataSelectIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/RegisterDataSelectIn" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelectIn[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelectIn[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/RegisterWriteIn" type="logic">
+         <obj_property name="ElementShortName">RegisterWriteIn</obj_property>
+         <obj_property name="ObjectShortName">RegisterWriteIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Data1In" type="array">
+         <obj_property name="ElementShortName">Data1In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data1In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Data2In" type="array">
+         <obj_property name="ElementShortName">Data2In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data2In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Imm32In" type="array">
+         <obj_property name="ElementShortName">Imm32In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/AddressIn" type="array">
+         <obj_property name="ElementShortName">AddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rs1In" type="array">
+         <obj_property name="ElementShortName">rs1In[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1In[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rs2In" type="array">
+         <obj_property name="ElementShortName">rs2In[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2In[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rdIn" type="array">
+         <obj_property name="ElementShortName">rdIn[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rdIn[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/FlushIn" type="logic">
+         <obj_property name="ElementShortName">FlushIn</obj_property>
+         <obj_property name="ObjectShortName">FlushIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/StallIn" type="logic">
+         <obj_property name="ElementShortName">StallIn</obj_property>
+         <obj_property name="ObjectShortName">StallIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/AddressSelectOut" type="array">
+         <obj_property name="ElementShortName">AddressSelectOut[2:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressSelectOut[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/MemWriteOut" type="logic">
+         <obj_property name="ElementShortName">MemWriteOut</obj_property>
+         <obj_property name="ObjectShortName">MemWriteOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/MemReadOut" type="logic">
+         <obj_property name="ElementShortName">MemReadOut</obj_property>
+         <obj_property name="ObjectShortName">MemReadOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/ALUOperationOut" type="array">
+         <obj_property name="ElementShortName">ALUOperationOut[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUOperationOut[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/ALUDataSelectOut" type="logic">
+         <obj_property name="ElementShortName">ALUDataSelectOut</obj_property>
+         <obj_property name="ObjectShortName">ALUDataSelectOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/RegisterDataSelectOut" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelectOut[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelectOut[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/RegisterWriteOut" type="logic">
+         <obj_property name="ElementShortName">RegisterWriteOut</obj_property>
+         <obj_property name="ObjectShortName">RegisterWriteOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Data1Out" type="array">
+         <obj_property name="ElementShortName">Data1Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data1Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Data2Out" type="array">
+         <obj_property name="ElementShortName">Data2Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data2Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Imm32Out" type="array">
+         <obj_property name="ElementShortName">Imm32Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/AddressOut" type="array">
+         <obj_property name="ElementShortName">AddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rs1Out" type="array">
+         <obj_property name="ElementShortName">rs1Out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1Out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rs2Out" type="array">
+         <obj_property name="ElementShortName">rs2Out[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2Out[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rdOut" type="array">
+         <obj_property name="ElementShortName">rdOut[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rdOut[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/AddressSelect" type="array">
+         <obj_property name="ElementShortName">AddressSelect[2:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressSelect[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/MemWrite" type="logic">
+         <obj_property name="ElementShortName">MemWrite</obj_property>
+         <obj_property name="ObjectShortName">MemWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/MemRead" type="logic">
+         <obj_property name="ElementShortName">MemRead</obj_property>
+         <obj_property name="ObjectShortName">MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/ALUOperation" type="array">
+         <obj_property name="ElementShortName">ALUOperation[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUOperation[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/ALUDataSelect" type="logic">
+         <obj_property name="ElementShortName">ALUDataSelect</obj_property>
+         <obj_property name="ObjectShortName">ALUDataSelect</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/RegisterDataSelect" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelect[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelect[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/RegisterWrite" type="logic">
+         <obj_property name="ElementShortName">RegisterWrite</obj_property>
+         <obj_property name="ObjectShortName">RegisterWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Data1" type="array">
+         <obj_property name="ElementShortName">Data1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Data2" type="array">
+         <obj_property name="ElementShortName">Data2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Imm32" type="array">
+         <obj_property name="ElementShortName">Imm32[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/Address" type="array">
+         <obj_property name="ElementShortName">Address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rs1" type="array">
+         <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rs2" type="array">
+         <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myIDEX/rd" type="array">
+         <obj_property name="ElementShortName">rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group52" type="group">
+      <obj_property name="label">EXMEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myEXMEM/clkIn" type="logic">
+         <obj_property name="ElementShortName">clkIn</obj_property>
+         <obj_property name="ObjectShortName">clkIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/resetIn" type="logic">
+         <obj_property name="ElementShortName">resetIn</obj_property>
+         <obj_property name="ObjectShortName">resetIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/AddressSelectIn" type="array">
+         <obj_property name="ElementShortName">AddressSelectIn[2:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressSelectIn[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/MemWriteIn" type="logic">
+         <obj_property name="ElementShortName">MemWriteIn</obj_property>
+         <obj_property name="ObjectShortName">MemWriteIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/MemReadIn" type="logic">
+         <obj_property name="ElementShortName">MemReadIn</obj_property>
+         <obj_property name="ObjectShortName">MemReadIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/RegisterDataSelectIn" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelectIn[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelectIn[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/RegisterWriteIn" type="logic">
+         <obj_property name="ElementShortName">RegisterWriteIn</obj_property>
+         <obj_property name="ObjectShortName">RegisterWriteIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALULessIn" type="logic">
+         <obj_property name="ElementShortName">ALULessIn</obj_property>
+         <obj_property name="ObjectShortName">ALULessIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALUZeroIn" type="logic">
+         <obj_property name="ElementShortName">ALUZeroIn</obj_property>
+         <obj_property name="ObjectShortName">ALUZeroIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALUResultIn" type="array">
+         <obj_property name="ElementShortName">ALUResultIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResultIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/Data2In" type="array">
+         <obj_property name="ElementShortName">Data2In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data2In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/Imm32In" type="array">
+         <obj_property name="ElementShortName">Imm32In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/PCRelAddressIn" type="array">
+         <obj_property name="ElementShortName">PCRelAddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCRelAddressIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/retAddressIn" type="array">
+         <obj_property name="ElementShortName">retAddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">retAddressIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/rdIn" type="array">
+         <obj_property name="ElementShortName">rdIn[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rdIn[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/FlushIn" type="logic">
+         <obj_property name="ElementShortName">FlushIn</obj_property>
+         <obj_property name="ObjectShortName">FlushIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/AddressSelectOut" type="array">
+         <obj_property name="ElementShortName">AddressSelectOut[2:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressSelectOut[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/MemWriteOut" type="logic">
+         <obj_property name="ElementShortName">MemWriteOut</obj_property>
+         <obj_property name="ObjectShortName">MemWriteOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/MemReadOut" type="logic">
+         <obj_property name="ElementShortName">MemReadOut</obj_property>
+         <obj_property name="ObjectShortName">MemReadOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/RegisterDataSelectOut" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelectOut[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelectOut[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/RegisterWriteOut" type="logic">
+         <obj_property name="ElementShortName">RegisterWriteOut</obj_property>
+         <obj_property name="ObjectShortName">RegisterWriteOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALULessOut" type="logic">
+         <obj_property name="ElementShortName">ALULessOut</obj_property>
+         <obj_property name="ObjectShortName">ALULessOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALUZeroOut" type="logic">
+         <obj_property name="ElementShortName">ALUZeroOut</obj_property>
+         <obj_property name="ObjectShortName">ALUZeroOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALUResultOut" type="array">
+         <obj_property name="ElementShortName">ALUResultOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResultOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/DataOut" type="array">
+         <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/Imm32Out" type="array">
+         <obj_property name="ElementShortName">Imm32Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/PCRelAddressOut" type="array">
+         <obj_property name="ElementShortName">PCRelAddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCRelAddressOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/retAddressOut" type="array">
+         <obj_property name="ElementShortName">retAddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">retAddressOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/rdOut" type="array">
+         <obj_property name="ElementShortName">rdOut[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rdOut[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/AddressSelect" type="array">
+         <obj_property name="ElementShortName">AddressSelect[2:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressSelect[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/MemWrite" type="logic">
+         <obj_property name="ElementShortName">MemWrite</obj_property>
+         <obj_property name="ObjectShortName">MemWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/MemRead" type="logic">
+         <obj_property name="ElementShortName">MemRead</obj_property>
+         <obj_property name="ObjectShortName">MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/RegisterDataSelect" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelect[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelect[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/RegisterWrite" type="logic">
+         <obj_property name="ElementShortName">RegisterWrite</obj_property>
+         <obj_property name="ObjectShortName">RegisterWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALULess" type="logic">
+         <obj_property name="ElementShortName">ALULess</obj_property>
+         <obj_property name="ObjectShortName">ALULess</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALUZero" type="logic">
+         <obj_property name="ElementShortName">ALUZero</obj_property>
+         <obj_property name="ObjectShortName">ALUZero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/ALUResult" type="array">
+         <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/Data" type="array">
+         <obj_property name="ElementShortName">Data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/Imm32" type="array">
+         <obj_property name="ElementShortName">Imm32[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/PCRelAddress" type="array">
+         <obj_property name="ElementShortName">PCRelAddress[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCRelAddress[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/retAddress" type="array">
+         <obj_property name="ElementShortName">retAddress[31:0]</obj_property>
+         <obj_property name="ObjectShortName">retAddress[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myEXMEM/rd" type="array">
+         <obj_property name="ElementShortName">rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group53" type="group">
+      <obj_property name="label">MEMWB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myMEMWB/clkIn" type="logic">
+         <obj_property name="ElementShortName">clkIn</obj_property>
+         <obj_property name="ObjectShortName">clkIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/resetIn" type="logic">
+         <obj_property name="ElementShortName">resetIn</obj_property>
+         <obj_property name="ObjectShortName">resetIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/RegisterDataSelectIn" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelectIn[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelectIn[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/RegisterWriteIn" type="logic">
+         <obj_property name="ElementShortName">RegisterWriteIn</obj_property>
+         <obj_property name="ObjectShortName">RegisterWriteIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/ALUResultIn" type="array">
+         <obj_property name="ElementShortName">ALUResultIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResultIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/DataIn" type="array">
+         <obj_property name="ElementShortName">DataIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DataIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/Imm32In" type="array">
+         <obj_property name="ElementShortName">Imm32In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/retAddressIn" type="array">
+         <obj_property name="ElementShortName">retAddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">retAddressIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/rdIn" type="array">
+         <obj_property name="ElementShortName">rdIn[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rdIn[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/RegisterDataSelectOut" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelectOut[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelectOut[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/RegisterWriteOut" type="logic">
+         <obj_property name="ElementShortName">RegisterWriteOut</obj_property>
+         <obj_property name="ObjectShortName">RegisterWriteOut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/ALUResultOut" type="array">
+         <obj_property name="ElementShortName">ALUResultOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResultOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/DataOut" type="array">
+         <obj_property name="ElementShortName">DataOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DataOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/Imm32Out" type="array">
+         <obj_property name="ElementShortName">Imm32Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/retAddressOut" type="array">
+         <obj_property name="ElementShortName">retAddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">retAddressOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/rdOut" type="array">
+         <obj_property name="ElementShortName">rdOut[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rdOut[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/RegisterDataSelect" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelect[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelect[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/RegisterWrite" type="logic">
+         <obj_property name="ElementShortName">RegisterWrite</obj_property>
+         <obj_property name="ObjectShortName">RegisterWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/ALUResult" type="array">
+         <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/Data" type="array">
+         <obj_property name="ElementShortName">Data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/Imm32" type="array">
+         <obj_property name="ElementShortName">Imm32[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/retAddress" type="array">
+         <obj_property name="ElementShortName">retAddress[31:0]</obj_property>
+         <obj_property name="ObjectShortName">retAddress[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myMEMWB/rd" type="array">
+         <obj_property name="ElementShortName">rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group141" type="group">
+      <obj_property name="label">FWD</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myFWD/IDEXrs1In" type="array">
+         <obj_property name="ElementShortName">IDEXrs1In[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IDEXrs1In[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWD/IDEXrs2In" type="array">
+         <obj_property name="ElementShortName">IDEXrs2In[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IDEXrs2In[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWD/EXMEMrdIn" type="array">
+         <obj_property name="ElementShortName">EXMEMrdIn[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EXMEMrdIn[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWD/EXMEMRegisterWriteIn" type="logic">
+         <obj_property name="ElementShortName">EXMEMRegisterWriteIn</obj_property>
+         <obj_property name="ObjectShortName">EXMEMRegisterWriteIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWD/EXMEMDataSelectorIn" type="array">
+         <obj_property name="ElementShortName">EXMEMDataSelectorIn[1:0]</obj_property>
+         <obj_property name="ObjectShortName">EXMEMDataSelectorIn[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWD/MEMWBrdIn" type="logic">
+         <obj_property name="ElementShortName">MEMWBrdIn</obj_property>
+         <obj_property name="ObjectShortName">MEMWBrdIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWD/MEMWBRegisterWriteIn" type="logic">
+         <obj_property name="ElementShortName">MEMWBRegisterWriteIn</obj_property>
+         <obj_property name="ObjectShortName">MEMWBRegisterWriteIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWD/ForwardAOut" type="array">
+         <obj_property name="ElementShortName">ForwardAOut[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardAOut[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWD/ForwardBOut" type="array">
+         <obj_property name="ElementShortName">ForwardBOut[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardBOut[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group142" type="group">
+      <obj_property name="label">FWDMUX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/IDEXRegisterData1In" type="array">
+         <obj_property name="ElementShortName">IDEXRegisterData1In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IDEXRegisterData1In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/IDEXRegisterData2In" type="array">
+         <obj_property name="ElementShortName">IDEXRegisterData2In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IDEXRegisterData2In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/EXMEMALUResultIn" type="array">
+         <obj_property name="ElementShortName">EXMEMALUResultIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EXMEMALUResultIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/EXMEMImm32In" type="array">
+         <obj_property name="ElementShortName">EXMEMImm32In[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EXMEMImm32In[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/EXMEMRetAddressIn" type="array">
+         <obj_property name="ElementShortName">EXMEMRetAddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EXMEMRetAddressIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/WriteBackMUXIn" type="array">
+         <obj_property name="ElementShortName">WriteBackMUXIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WriteBackMUXIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/ForwardAIn" type="array">
+         <obj_property name="ElementShortName">ForwardAIn[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardAIn[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/ForwardBIn" type="array">
+         <obj_property name="ElementShortName">ForwardBIn[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardBIn[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/RegisterData1Out" type="array">
+         <obj_property name="ElementShortName">RegisterData1Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterData1Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFWDMUX/RegisterData2Out" type="array">
+         <obj_property name="ElementShortName">RegisterData2Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterData2Out[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group143" type="group">
+      <obj_property name="label">Stall</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myStall/IFIDrs1In" type="array">
+         <obj_property name="ElementShortName">IFIDrs1In[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IFIDrs1In[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myStall/IFIDrs2In" type="array">
+         <obj_property name="ElementShortName">IFIDrs2In[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IFIDrs2In[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myStall/IDEXrdIn" type="array">
+         <obj_property name="ElementShortName">IDEXrdIn[4:0]</obj_property>
+         <obj_property name="ObjectShortName">IDEXrdIn[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myStall/IDEXMemReadIn" type="logic">
+         <obj_property name="ElementShortName">IDEXMemReadIn</obj_property>
+         <obj_property name="ObjectShortName">IDEXMemReadIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myStall/EXMEMRegisterWriteIn" type="logic">
+         <obj_property name="ElementShortName">EXMEMRegisterWriteIn</obj_property>
+         <obj_property name="ObjectShortName">EXMEMRegisterWriteIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myStall/EXMEMrdIn" type="array">
+         <obj_property name="ElementShortName">EXMEMrdIn[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EXMEMrdIn[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myStall/StallOut" type="logic">
+         <obj_property name="ElementShortName">StallOut</obj_property>
+         <obj_property name="ObjectShortName">StallOut</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group144" type="group">
+      <obj_property name="label">Flush</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myFlush/ALULessIn" type="logic">
+         <obj_property name="ElementShortName">ALULessIn</obj_property>
+         <obj_property name="ObjectShortName">ALULessIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFlush/ALUZeroIn" type="logic">
+         <obj_property name="ElementShortName">ALUZeroIn</obj_property>
+         <obj_property name="ObjectShortName">ALUZeroIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFlush/EXMEMAddressSelectorIn" type="array">
+         <obj_property name="ElementShortName">EXMEMAddressSelectorIn[2:0]</obj_property>
+         <obj_property name="ObjectShortName">EXMEMAddressSelectorIn[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myFlush/FlushOut" type="logic">
+         <obj_property name="ElementShortName">FlushOut</obj_property>
+         <obj_property name="ObjectShortName">FlushOut</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group175" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/clkIn" type="logic">
+         <obj_property name="ElementShortName">clkIn</obj_property>
+         <obj_property name="ObjectShortName">clkIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/resetIn" type="logic">
+         <obj_property name="ElementShortName">resetIn</obj_property>
+         <obj_property name="ObjectShortName">resetIn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/Register1" type="array">
+         <obj_property name="ElementShortName">Register1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Register1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/Register2" type="array">
+         <obj_property name="ElementShortName">Register2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Register2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/RegisterDestination" type="array">
+         <obj_property name="ElementShortName">RegisterDestination[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDestination[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/WriteData" type="array">
+         <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/RegisterWrite" type="logic">
+         <obj_property name="ElementShortName">RegisterWrite</obj_property>
+         <obj_property name="ObjectShortName">RegisterWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/AddressIn" type="array">
+         <obj_property name="ElementShortName">AddressIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/sw_i" type="array">
+         <obj_property name="ElementShortName">sw_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sw_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/ReadData1" type="array">
+         <obj_property name="ElementShortName">ReadData1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ReadData1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/ReadData2" type="array">
+         <obj_property name="ElementShortName">ReadData2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ReadData2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/portOut" type="array">
+         <obj_property name="ElementShortName">portOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">portOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/Registers" type="array">
+         <obj_property name="ElementShortName">Registers[31:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">Registers[31:0][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myRegisterFile/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group190" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myALU/ALUData1" type="array">
+         <obj_property name="ElementShortName">ALUData1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUData1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myALU/ALUDtat2" type="array">
+         <obj_property name="ElementShortName">ALUDtat2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUDtat2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myALU/ALUOperation" type="array">
+         <obj_property name="ElementShortName">ALUOperation[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUOperation[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myALU/ALULess" type="logic">
+         <obj_property name="ElementShortName">ALULess</obj_property>
+         <obj_property name="ObjectShortName">ALULess</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myALU/ALUZero" type="logic">
+         <obj_property name="ElementShortName">ALUZero</obj_property>
+         <obj_property name="ObjectShortName">ALUZero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myALU/ALUResult" type="array">
+         <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group197" type="group">
+      <obj_property name="label">AddressMUX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/ALULess" type="logic">
+         <obj_property name="ElementShortName">ALULess</obj_property>
+         <obj_property name="ObjectShortName">ALULess</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/ALUZero" type="logic">
+         <obj_property name="ElementShortName">ALUZero</obj_property>
+         <obj_property name="ObjectShortName">ALUZero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/ALUResult" type="array">
+         <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/PCPlusOffset" type="array">
+         <obj_property name="ElementShortName">PCPlusOffset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlusOffset[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/PCPlusOne" type="array">
+         <obj_property name="ElementShortName">PCPlusOne[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlusOne[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/AddressSelect" type="array">
+         <obj_property name="ElementShortName">AddressSelect[2:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressSelect[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myAddressMUX/AddressOut" type="array">
+         <obj_property name="ElementShortName">AddressOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AddressOut[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group205" type="group">
+      <obj_property name="label">WBDataMUX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/myComputer/myWriteBackMUX/ALUResult" type="array">
+         <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myWriteBackMUX/Imm32" type="array">
+         <obj_property name="ElementShortName">Imm32[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm32[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myWriteBackMUX/MemData" type="array">
+         <obj_property name="ElementShortName">MemData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MemData[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myWriteBackMUX/Address" type="array">
+         <obj_property name="ElementShortName">Address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myWriteBackMUX/RegisterDataSelect" type="array">
+         <obj_property name="ElementShortName">RegisterDataSelect[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterDataSelect[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/myComputer/myWriteBackMUX/RegisterData" type="array">
+         <obj_property name="ElementShortName">RegisterData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RegisterData[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

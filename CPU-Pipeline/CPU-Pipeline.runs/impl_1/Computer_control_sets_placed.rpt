@@ -1,0 +1,550 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Mar 28 22:17:40 2023
+| Host         : LAPTOP-UHL51CUR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Computer_control_sets_placed.rpt
+| Design       : Computer
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   476 |
+| Unused register locations in slices containing registers |  1694 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           16 |
+|      2 |           50 |
+|      3 |           71 |
+|      4 |          194 |
+|      5 |            6 |
+|      6 |           13 |
+|      7 |           46 |
+|      8 |           66 |
+|      9 |            2 |
+|     11 |            2 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             659 |          213 |
+| No           | No                    | Yes                    |             510 |          168 |
+| No           | Yes                   | No                     |              34 |           16 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            2143 |         1152 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+--------------------------------------+------------------------------------------+------------------+----------------+
+|            Clock Signal            |             Enable Signal            |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++------------------------------------+--------------------------------------+------------------------------------------+------------------+----------------+
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myMEMWB/rstn                             |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myMEMWB/rstn                             |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myMEMWB/rstn                             |                1 |              1 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_1[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myMEMWB/rstn                             |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myRegisterFile/rstn                      |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myMEMWB/rstn                             |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/rstn_0                      |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myMEMWB/rstn                             |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/rstn_0                      |                1 |              1 |
+|  Clk_CPU_BUFG                      | myMEMWB/E[0]                         | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/rstn_0                      |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/rstn_0                      |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/AddressSelectOut_reg[2]_0[0] | myRegisterFile/rstn_0                    |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myMEMWB/rstn                             |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/rstn_0                      |                1 |              1 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/rstn_0                      |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/rstn                        |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/rstn_0                      |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/rstn                        |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/rstn                        |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  myIDEX/MemReadOut_reg_0           |                                      | myIDEX/MemReadOut_reg_1                  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/rstn_0                      |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/rstn                        |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/rstn_0                      |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/rstn_0                      |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/rstn                        |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/rstn_0                      |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_29[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_6[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                2 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_28[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_4[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                2 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_5[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/rstn                        |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/rstn_0                      |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/rstn                        |                2 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_31[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_7[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_2[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_27[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/rstn_0                      |                2 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/rstn_0                      |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_25[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_3[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_26[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_30[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/rstn                        |                2 |              2 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_24[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                1 |              2 |
+|  myIDEX/E[0]                       |                                      |                                          |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/rstn                        |                1 |              3 |
+|  myMEMWB/RegisterWriteOut_reg_0[0] |                                      |                                          |                1 |              3 |
+|  mySeg7x16/seg7_clk                |                                      | mySeg7x16/rstn                           |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      |                                      | mySeg7x16/rstn                           |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/rstn                        |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/rstn                        |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/rstn                        |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/Memory[31][8]_i_1_n_0       |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/rstn                        |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/Memory[31][20]_i_1_n_0      |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/rstn                        |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/rstn                        |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/Memory[31][8]_i_1_n_0       |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/rstn                        |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/Memory[31][20]_i_1_n_0      |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/rstn                        |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/rstn                        |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/Memory[31][12]_i_1_n_0      |                3 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/rstn                        |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/Memory[31][20]_i_1_n_0      |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/rstn                        |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/rstn                        |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_10[0]   | myIDEX/rstn                              |                2 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_15[0]   | myIDEX/rstn                              |                2 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_16[0]   | myIDEX/rstn                              |                1 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_17[0]   | myIDEX/rstn                              |                2 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_18[0]   | myIDEX/rstn                              |                2 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_19[0]   | myIDEX/rstn                              |                1 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_13[0]   | myIDEX/rstn                              |                1 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_12[0]   | myIDEX/rstn                              |                1 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_14[0]   | myIDEX/rstn                              |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_9[0]    | myIDEX/rstn                              |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/rstn                        |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/rstn                        |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_20[0]   | myIDEX/rstn                              |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_8[0]    | myIDEX/rstn                              |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/rstn                        |                2 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              3 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_11[0]   | myIDEX/rstn                              |                1 |              3 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_7[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_0[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_5[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_3[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/Memory[31][16]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_2[0] | myDataMemory/rstn                        |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_8[0]     | myDataMemory/rstn                        |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_4[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/Memory[31][16]_i_1_n_0      |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_1[0] | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_1[0]     | myDataMemory/rstn                        |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/rstn                        |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_4[0]     | myDataMemory/rstn                        |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/Memory[31][8]_i_1_n_0       |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_3[0] | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_3[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_0[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_10[0]    | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_2[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_3[0] | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/Memory[31][4]_i_1_n_0       |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/Memory[31][12]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_0[0]         | myDataMemory/rstn                        |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_6[0]         | myDataMemory/Memory[31][4]_i_1_n_0       |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/Memory[31][28]_i_1_n_0      |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_1[0]         | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_2[0]         | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_9[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/Memory[31][16]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/Memory[31][4]_i_1_n_0       |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_5[0]         | myDataMemory/rstn                        |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/Memory[31][23]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_3[0]         | myDataMemory/rstn                        |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/MemWriteOut_reg_4[0]         | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_2[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_6[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/Memory[31][28]_i_1_n_0      |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_1[0] | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/Memory[31][20]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_23[0]   | myIDEX/rstn                              |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_22[0]   | myIDEX/rstn                              |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[3]_0[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_21[0]   | myIDEX/rstn                              |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/Memory[31][20]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/Memory[31][4]_i_1_n_0       |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/Memory[31][23]_i_1_n_0      |                3 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                1 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/Memory[31][8]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/Memory[31][12]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/Memory[31][16]_i_1_n_0      |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[2]_1[0]     | myDataMemory/Memory[31][4]_i_1_n_0       |                2 |              4 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[0]_rep_4[0] | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              5 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_21[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                4 |              5 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_22[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                4 |              5 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_23[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                4 |              5 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[1]_rep_2[0] | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              5 |
+|  Clk_CPU_BUFG                      | myEXMEM/ALUResultOut_reg[5]_1[0]     | myDataMemory/Memory[31][28]_i_1_n_0      |                3 |              5 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_10[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                3 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_14[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                4 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_17[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                5 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_9[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                4 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_13[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                3 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_16[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                5 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_18[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                4 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_11[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                3 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_12[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                3 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_19[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                4 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_20[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                4 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_15[0]   | myRegisterFile/Registers[31][0]_i_2_n_0  |                2 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_8[0]    | myRegisterFile/Registers[31][0]_i_2_n_0  |                3 |              6 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_17[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_23[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                2 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_6[0]    | myRegisterFile/Registers[31][8]_i_2_n_0  |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_18[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                2 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_4[0]    | myRegisterFile/Registers[31][8]_i_2_n_0  |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_7[0]    | myRegisterFile/rstn                      |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_6[0]    | myRegisterFile/rstn                      |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_19[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                2 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_9[0]    | myRegisterFile/Registers[23][25]_i_1_n_0 |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_13[0]   | myRegisterFile/rstn_0                    |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_12[0]   | myRegisterFile/rstn_0                    |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_22[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_5[0]    | myRegisterFile/rstn                      |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_4[0]    | myRegisterFile/rstn                      |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_7[0]    | myRegisterFile/Registers[31][16]_i_2_n_0 |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_5[0]    | myRegisterFile/Registers[31][8]_i_2_n_0  |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_28[0]   | myRegisterFile/Registers[31][23]_i_2_n_0 |                2 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_21[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_1[0]    | myRegisterFile/rstn                      |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_31[0]   | myRegisterFile/rstn                      |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_28[0]   | myRegisterFile/rstn                      |                2 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_14[0]   | myRegisterFile/rstn_0                    |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/E[0]                         | myRegisterFile/Registers[31][23]_i_2_n_0 |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_2[0]    | myRegisterFile/Registers[31][8]_i_2_n_0  |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_2[0]    | myRegisterFile/rstn                      |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_27[0]   | myRegisterFile/Registers[31][16]_i_2_n_0 |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_27[0]   | myRegisterFile/rstn                      |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_10[0]   | myRegisterFile/rstn_0                    |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_16[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                2 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_20[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                2 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_25[0]   | myRegisterFile/Registers[31][16]_i_2_n_0 |                7 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_25[0]   | myRegisterFile/rstn                      |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_3[0]    | myRegisterFile/Registers[31][8]_i_2_n_0  |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_3[0]    | myRegisterFile/rstn                      |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_11[0]   | myRegisterFile/rstn_0                    |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_8[0]    | myRegisterFile/Registers[23][25]_i_1_n_0 |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_31[0]   | myRegisterFile/Registers[31][23]_i_2_n_0 |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_26[0]   | myRegisterFile/Registers[31][16]_i_2_n_0 |                6 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_26[0]   | myRegisterFile/rstn                      |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_15[0]   | myRegisterFile/rstn_0                    |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_30[0]   | myRegisterFile/Registers[31][23]_i_2_n_0 |                3 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_30[0]   | myRegisterFile/rstn                      |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_24[0]   | myRegisterFile/Registers[31][16]_i_2_n_0 |                6 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_24[0]   | myRegisterFile/rstn                      |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_29[0]   | myRegisterFile/Registers[31][23]_i_2_n_0 |                4 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_29[0]   | myRegisterFile/rstn                      |                5 |              7 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_4[0]    | myRegisterFile/Registers[31][23]_i_2_n_0 |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/E[0]                         | myRegisterFile/Registers[31][16]_i_2_n_0 |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_23[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                2 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_23[0]   | myRegisterFile/rstn_0                    |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/E[0]                         | myRegisterFile/Registers[31][8]_i_2_n_0  |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_5[0]    | myRegisterFile/Registers[31][16]_i_2_n_0 |                2 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_5[0]    | myRegisterFile/Registers[31][23]_i_2_n_0 |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_28[0]   | myRegisterFile/Registers[31][16]_i_2_n_0 |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_22[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_22[0]   | myRegisterFile/rstn_0                    |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/E[0]                         | myRegisterFile/rstn                      |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_31[0]   | myRegisterFile/Registers[31][16]_i_2_n_0 |                7 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_31[0]   | myRegisterFile/Registers[31][8]_i_2_n_0  |                7 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_12[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_21[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_21[0]   | myRegisterFile/rstn_0                    |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_10[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_7[0]    | myRegisterFile/Registers[31][8]_i_2_n_0  |                2 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_7[0]    | myRegisterFile/Registers[31][23]_i_2_n_0 |                6 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_2[0]    | myRegisterFile/Registers[31][16]_i_2_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_16[0]   | myRegisterFile/rstn_0                    |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_2[0]    | myRegisterFile/Registers[31][23]_i_2_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_17[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                2 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_10[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_17[0]   | myRegisterFile/rstn_0                    |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_27[0]   | myRegisterFile/Registers[31][8]_i_2_n_0  |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_27[0]   | myRegisterFile/Registers[31][23]_i_2_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_18[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_18[0]   | myRegisterFile/rstn_0                    |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_20[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                2 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_19[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                2 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_19[0]   | myRegisterFile/rstn_0                    |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_20[0]   | myRegisterFile/rstn_0                    |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_26[0]   | myRegisterFile/Registers[31][23]_i_2_n_0 |                6 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_1[0]    | myRegisterFile/Registers[31][23]_i_2_n_0 |                6 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_25[0]   | myRegisterFile/Registers[31][8]_i_2_n_0  |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_25[0]   | myRegisterFile/Registers[31][23]_i_2_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_13[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_15[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                2 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_3[0]    | myRegisterFile/Registers[31][16]_i_2_n_0 |                2 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_13[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_3[0]    | myRegisterFile/Registers[31][23]_i_2_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_12[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_14[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_14[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_1[0]    | myRegisterFile/Registers[31][16]_i_2_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_8[0]    | myRegisterFile/Registers[23][13]_i_1_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_8[0]    | myRegisterFile/rstn_0                    |                6 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_15[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_1[0]    | myRegisterFile/Registers[31][8]_i_2_n_0  |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_26[0]   | myRegisterFile/Registers[31][8]_i_2_n_0  |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_11[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_11[0]   | myRegisterFile/Registers[23][13]_i_1_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_30[0]   | myRegisterFile/Registers[31][16]_i_2_n_0 |                7 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_30[0]   | myRegisterFile/Registers[31][8]_i_2_n_0  |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_6[0]    | myRegisterFile/Registers[31][16]_i_2_n_0 |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_6[0]    | myRegisterFile/Registers[31][23]_i_2_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_9[0]    | myRegisterFile/Registers[23][13]_i_1_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_24[0]   | myRegisterFile/Registers[31][8]_i_2_n_0  |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_24[0]   | myRegisterFile/Registers[31][23]_i_2_n_0 |                4 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_9[0]    | myRegisterFile/rstn_0                    |                6 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_16[0]   | myRegisterFile/Registers[23][25]_i_1_n_0 |                3 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_29[0]   | myRegisterFile/Registers[31][16]_i_2_n_0 |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_29[0]   | myRegisterFile/Registers[31][8]_i_2_n_0  |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_28[0]   | myRegisterFile/Registers[31][8]_i_2_n_0  |                5 |              8 |
+|  Clk_CPU_BUFG                      | myMEMWB/RegisterWriteOut_reg_4[0]    | myRegisterFile/Registers[31][16]_i_2_n_0 |                6 |              8 |
+|  Clk_CPU_BUFG                      | myEXMEM/E[0]                         | myEXMEM/rstn                             |                3 |              9 |
+|  Clk_CPU_BUFG                      | myEXMEM/AddressSelectOut_reg[2]_0[0] | myRegisterFile/rstn                      |                3 |              9 |
+|  Clk_CPU_BUFG                      | myEXMEM/AddressSelectOut_reg[2]_0[0] | myIDEX/rstn                              |                5 |             11 |
+|  myIFID/InstructionOut_reg[4]_0[0] |                                      |                                          |                4 |             11 |
+|  Clk_CPU_BUFG                      |                                      | myDataMemory/rstn                        |               12 |             27 |
+| ~Clk_CPU_BUFG                      |                                      | myEXMEM/SR[0]                            |               15 |             32 |
+|  Clk_CPU_BUFG                      |                                      | myIDEX/rstn_0                            |               18 |             58 |
+|  Clk_CPU_BUFG                      |                                      | myIDEX/rstn                              |               22 |             61 |
+|  Clk_CPU_BUFG                      |                                      | myDataMemory/rstn_0                      |               20 |             64 |
+|  clk_IBUF_BUFG                     |                                      | mySeg7x16/rstn                           |               19 |             64 |
+|  Clk_CPU_BUFG                      | myEXMEM/AddressSelectOut_reg[2]_0[0] | myIDEX/rstn_0                            |               18 |             65 |
+|  Clk_CPU_BUFG                      |                                      | myEXMEM/rstn                             |               29 |            114 |
+|  Clk_CPU_BUFG                      |                                      | myMEMWB/rstn                             |               45 |            116 |
+| ~Clk_CPU_BUFG                      |                                      |                                          |              207 |            642 |
++------------------------------------+--------------------------------------+------------------------------------------+------------------+----------------+
+
+
